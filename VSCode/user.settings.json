@@ -1,299 +1,2222 @@
 {
-    "WavPreview.autoAnalyze": true,
-    "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[json]": {
-        "editor.defaultFormatter": "vscode.json-language-features"
-    },
-    "[markdown]": {
-        "editor.defaultFormatter": "yzhang.markdown-all-in-one"
-    },
-    "[typescript]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "auto-build.defaultEnv.name": "STM32F103RE_creality",
-    "cSpell.enableFiletypes": [
-        "todo"
-    ],
-    "cSpell.enabled": false,
-    "cSpell.ignoreWords": [
-        "Inkscape"
-    ],
-    "cSpell.userWords": [
-        "Jadin"
-    ],
-    "cody.inlineChat.enabled": false,
-    "debug.toolBarLocation": "commandCenter",
-    "diffEditor.diffAlgorithm": "advanced",
-    "diffEditor.ignoreTrimWhitespace": false,
-    "editor.accessibilitySupport": "off",
-    "editor.codeActionsOnSave": {},
-    "editor.detectIndentation": false,
-    "editor.formatOnType": true,
-    "editor.inlineSuggest.suppressSuggestions": true,
-    "editor.insertSpaces": false,
-    "editor.minimap.enabled": false,
-    "editor.renderWhitespace": "none",
-    "editor.stickyScroll.enabled": true,
-    "editor.tabSize": 4,
-    "editor.unicodeHighlight.invisibleCharacters": false,
-    "editor.unicodeHighlight.nonBasicASCII": true,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 200,
-    "files.exclude": {
-        "**/.git": false
-    },
-    "filesize.showGzipInStatusBar": true,
-    "filesize.use24HourFormat": false,
-    "filesize.useDecimal": true,
-    "formatFiles.extensionsToInclude": ".php",
-    "git.allowForcePush": true,
-    "git.alwaysShowStagedChangesResourceGroup": true,
-    "git.alwaysSignOff": true,
-    "git.autofetch": true,
-    "git.autofetchPeriod": 300,
-    "git.confirmForcePush": false,
-    "git.confirmSync": false,
-    "git.enableSmartCommit": true,
-    "git.enabled": true,
-    "git.ignoreMissingGitWarning": true,
-    "git.mergeEditor": true,
-    "git.openRepositoryInParentFolders": "never",
-    "git.postCommitCommand": "sync",
-    "git.pruneOnFetch": true,
-    "git.useCommitInputAsStashMessage": true,
-    "github-enterprise.uri": "https://github.com/JadinHeaston",
-    "gitlens.advanced.messages": {
-        "suppressCreatePullRequestPrompt": true
-    },
-    "gitlens.codeLens.authors.enabled": false,
-    "gitlens.codeLens.includeSingleLineSymbols": true,
-    "gitlens.codeLens.recentChange.enabled": false,
-    "gitlens.showWelcomeOnInstall": false,
-    "gitlens.views.branches.files.layout": "tree",
-    "gitlens.views.searchAndCompare.files.layout": "tree",
-    "hediet.vscode-drawio.codeLinkActivated": false,
-    "html.autoClosingTags": false,
-    "html.autoCreateQuotes": false,
-    "html.format.indentInnerHtml": true,
-    "increment-selection.topToBottom": true,
-    "indentRainbow.colorOnWhiteSpaceOnly": true,
-    "indentRainbow.indicatorStyle": "light",
-    "indentRainbow.lightIndicatorStyleLineWidth": 4,
-    "indentRainbow.updateDelay": 250,
-    "intelephense.environment.phpVersion": "8.1.8",
-    "intelephense.environment.shortOpenTag": false,
-    "intelephense.files.exclude": [
-        "**/.svn/**",
-        "**/.hg/**",
-        "**/CVS/**",
-        "**/.DS_Store/**",
-        "**/node_modules/**",
-        "**/bower_components/**",
-        "**/vendor/**/{Tests,tests}/**",
-        "**/.history/**",
-        "**/vendor/**/vendor/**",
-        "**/.git/**"
-    ],
-    "intelephense.format.braces": "allman",
-    "intelephense.stubs": [
-        "apache",
-        "bcmath",
-        "bz2",
-        "calendar",
-        "com_dotnet",
-        "Core",
-        "ctype",
-        "curl",
-        "date",
-        "dba",
-        "dom",
-        "enchant",
-        "exif",
-        "FFI",
-        "fileinfo",
-        "filter",
-        "fpm",
-        "ftp",
-        "gd",
-        "gettext",
-        "gmp",
-        "hash",
-        "iconv",
-        "imap",
-        "intl",
-        "json",
-        "ldap",
-        "libxml",
-        "mbstring",
-        "meta",
-        "mysqli",
-        "oci8",
-        "odbc",
-        "openssl",
-        "pcntl",
-        "pcre",
-        "PDO",
-        "pdo_ibm",
-        "pdo_mysql",
-        "pdo_pgsql",
-        "pdo_sqlite",
-        "pgsql",
-        "Phar",
-        "posix",
-        "pspell",
-        "readline",
-        "Reflection",
-        "session",
-        "shmop",
-        "SimpleXML",
-        "snmp",
-        "soap",
-        "sockets",
-        "sodium",
-        "SPL",
-        "sqlite3",
-        "standard",
-        "superglobals",
-        "sysvmsg",
-        "sysvsem",
-        "sysvshm",
-        "tidy",
-        "tokenizer",
-        "xml",
-        "xmlreader",
-        "xmlrpc",
-        "xmlwriter",
-        "xsl",
-        "Zend OPcache",
-        "zip",
-        "zlib",
-        "sqlsrv",
-        "ssh2",
-        "random"
-    ],
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "livePreview.autoRefreshPreview": "On Changes to Saved Files",
-    "livePreview.showServerStatusNotifications": true,
-    "liveServer.settings.CustomBrowser": "firefox",
-    "liveServer.settings.NoBrowser": true,
-    "liveServer.settings.donotShowInfoMsg": true,
-    "liveServer.settings.donotVerifyTags": true,
-    "liveServer.settings.fullReload": true,
-    "liveServer.settings.host": "",
-    "liveServer.settings.useWebExt": true,
-    "liveServer.settings.wait": 100,
-    "liveshare.launcherClient": "web",
-    "markdown.experimental.validate.fileLinks.enabled": "error",
-    "markdown.experimental.validate.fileLinks.markdownFragmentLinks": "error",
-    "markdown.experimental.validate.fragmentLinks.enabled": "error",
-    "markdown.experimental.validate.referenceLinks.enabled": "error",
-    "markdown.extension.list.indentationSize": "inherit",
-    "markdown.extension.print.absoluteImgPath": false,
-    "markdown.extension.print.imgToBase64": true,
-    "markdown.extension.print.theme": "dark",
-    "markdown.extension.toc.orderedList": true,
-    "npm.keybindingsChangedWarningShown": true,
-    "php.validate.executablePath": "C:/xampp/php/php.exe",
-    "php.validate.run": "onType",
-    "phpserver.phpConfigPath": "C:/xampp/php/php.ini",
-    "phpserver.phpPath": "C:/xampp/php/php.exe",
-    "python.defaultInterpreterPath": "c:\\Python27\\python.exe",
-    "remote.SSH.configFile": "C:\\Users\\jbheasto\\.ssh\\config",
-    "remote.SSH.localServerDownload": "always",
-    "remote.SSH.remotePlatform": {
-        "Multiple": "linux",
-        "Multiple Sites": "linux",
-        "Multiple_Sites": "linux",
-        "New_MyColumbiaMo": "linux",
-        "SecTrack2": "windows",
-        "Staging_FlyCOU": "linux",
-        "api.edge.gocolumbiamo.com": "linux",
-        "apk.edge.gocolumbiamo.com": "linux",
-        "appwrite.edge.gocolumbiamo.com": "linux",
-        "cip.edge.gocolumbiamo.com": "linux",
-        "como.gov": "linux",
-        "docker.edge.gocolumbiamo.com": "linux",
-        "foodhandler.edge.gocolumbiamo.com": "linux",
-        "moodle.edge.gocolumbiamo.com": "linux",
-        "phpapps.core.gocolumbiamo.com": "linux",
-        "phpapps.edge.gocolumbiamo.com": "linux",
-        "sectrack-dev.edge.gocolumbiamo.com": "linux",
-        "sectrack2.edge.gocolumbiamo.com": "windows",
-        "ssh.vps.jadinheaston.com": "linux",
-        "staging-gcmt.edge.gocolumbiamo.com": "linux",
-        "staging-wcg.edge.gocolumbiamo.com": "linux",
-        "staging.como.gov": "linux",
-        "vps.jadinheaston.com": "linux",
-        "webdev.edge.gocolumbiamo.com": "linux",
-        "webserver-us.edge.gocolumbiamo.com": "linux"
-    },
-    "remote.tunnels.alwaysUpdateCLI": true,
-    "remoteHub.commitDirectlyWarning": "off",
-    "scm.experimental.showSyncView": true,
-    "security.workspace.trust.banner": "never",
-    "security.workspace.trust.emptyWindow": false,
-    "security.workspace.trust.enabled": false,
-    "security.workspace.trust.startupPrompt": "never",
-    "settingsSync.ignoredSettings": [
-        "remote.SSH.configFile"
-    ],
-    "sonarlint.rules": {
-        "docker:S2260": {
-            "level": "on"
-        },
-        "php:S103": {
-            "level": "off"
-        },
-        "php:S105": {
-            "level": "off"
-        },
-        "php:S107": {
-            "level": "off"
-        },
-        "php:S121": {
-            "level": "off"
-        },
-        "php:S4833": {
-            "level": "off"
-        },
-        "php:S6600": {
-            "level": "off"
-        }
-    },
-    "svg.minify.cleanupIDs": false,
-    "svg.minify.convertStyleToAttrs": false,
-    "svg.minify.inlineStyles": false,
-    "svg.minify.mergePaths": false,
-    "svg.minify.prefixIds": false,
-    "svg.preview.mode": "svg",
-    "svg.preview.toolbarSize": "mini",
-    "terminal.integrated.allowMnemonics": true,
-    "terminal.integrated.cursorBlinking": true,
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
-    "terminal.integrated.enableBell": true,
-    "terminal.integrated.enableMultiLinePasteWarning": false,
-    "typescript.updateImportsOnFileMove.enabled": "always",
-    "window.commandCenter": false,
-    "window.density.editorTabHeight": "compact",
-    "window.restoreWindows": "none",
-    "workbench.colorTheme": "Visual Studio Dark - C++",
-    "workbench.editor.empty.hint": "hidden",
-    "workbench.editor.pinnedTabsOnSeparateRow": true,
-    "workbench.editor.untitled.hint": "hidden",
-    "workbench.editorAssociations": {
-        "*.png": "luna.editor",
-        "*.svg": "default",
-        "git-rebase-todo": "gitlens.rebase"
-    },
-    "workbench.startupEditor": "none"
+	"cSpell.enableFiletypes": [
+		"todo"
+	],
+	"cSpell.ignoreWords": [
+		"Inkscape"
+	],
+	"cSpell.userWords": [
+		"Jadin"
+	],
+	"diffEditor.diffAlgorithm": "advanced",
+	"editor.tabSize": 4,
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"editor.accessibilitySupport": "off",
+	"editor.renderWhitespace": "none",
+	"editor.unicodeHighlight.nonBasicASCII": true,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"files.autoSaveDelay": 200,
+	"git.alwaysShowStagedChangesResourceGroup": true,
+	"git.alwaysSignOff": true,
+	"git.autofetch": true,
+	"git.autofetchPeriod": 300,
+	"git.enableSmartCommit": true,
+	"git.pruneOnFetch": true,
+	"git.useCommitInputAsStashMessage": true,
+	"github-enterprise.uri": "https://github.com/JadinHeaston",
+	"gitlens.showWelcomeOnInstall": false,
+	"gitlens.views.branches.files.layout": "tree",
+	"gitlens.views.searchAndCompare.files.layout": "tree",
+	"html.autoClosingTags": false,
+	"html.autoCreateQuotes": false,
+	"intelephense.environment.phpVersion": "8.1.8",
+	"intelephense.stubs": [
+		"apache",
+		"bcmath",
+		"bz2",
+		"calendar",
+		"com_dotnet",
+		"Core",
+		"ctype",
+		"curl",
+		"date",
+		"dba",
+		"dom",
+		"enchant",
+		"exif",
+		"FFI",
+		"fileinfo",
+		"filter",
+		"fpm",
+		"ftp",
+		"gd",
+		"gettext",
+		"gmp",
+		"hash",
+		"iconv",
+		"imap",
+		"intl",
+		"json",
+		"ldap",
+		"libxml",
+		"mbstring",
+		"meta",
+		"mysqli",
+		"oci8",
+		"odbc",
+		"openssl",
+		"pcntl",
+		"pcre",
+		"PDO",
+		"pdo_ibm",
+		"pdo_mysql",
+		"pdo_pgsql",
+		"pdo_sqlite",
+		"pgsql",
+		"Phar",
+		"posix",
+		"pspell",
+		"readline",
+		"Reflection",
+		"session",
+		"shmop",
+		"SimpleXML",
+		"snmp",
+		"soap",
+		"sockets",
+		"sodium",
+		"SPL",
+		"sqlite3",
+		"standard",
+		"superglobals",
+		"sysvmsg",
+		"sysvsem",
+		"sysvshm",
+		"tidy",
+		"tokenizer",
+		"xml",
+		"xmlreader",
+		"xmlrpc",
+		"xmlwriter",
+		"xsl",
+		"Zend OPcache",
+		"zip",
+		"zlib",
+		"sqlsrv",
+		"ssh2",
+		"random"
+	],
+	"liveServer.settings.CustomBrowser": "firefox",
+	"liveServer.settings.donotShowInfoMsg": true,
+	"liveServer.settings.donotVerifyTags": true,
+	"liveServer.settings.wait": 100,
+	"liveshare.launcherClient": "web",
+	"php.validate.executablePath": "C:/Program Files/php/php.exe",
+	"php.validate.run": "onType",
+	"phpserver.phpConfigPath": "C:/Program Files/php/php.ini",
+	"phpserver.phpPath": "C:/Program Files/php/php.exe",
+	"remote.SSH.configFile": "C:/Users/Jadin-PC/.ssh/.config",
+	"remote.SSH.localServerDownload": "always",
+	"remote.SSH.remotePlatform": {
+		"Multiple_Sites": "linux",
+		"Staging_FlyCOU": "linux",
+		"como.gov": "linux",
+		"staging-wcg.edge.gocolumbiamo.com": "linux",
+		"staging.como.gov": "linux",
+		"webserver-us.edge.gocolumbiamo.com": "linux",
+		"Multiple Sites": "linux",
+		"staging-gcmt.edge.gocolumbiamo.com": "linux",
+		"Multiple": "linux",
+		"vps.jadinheaston.com": "linux",
+		"foodhandler.edge.gocolumbiamo.com": "linux",
+		"New_MyColumbiaMo": "linux",
+		"phpapps.core.gocolumbiamo.com": "linux",
+		"ssh.vps.jadinheaston.com": "linux",
+		"appwrite.edge.gocolumbiamo.com": "linux",
+		"docker.edge.gocolumbiamo.com": "linux",
+		"webdev.edge.gocolumbiamo.com": "linux",
+		"cip.edge.gocolumbiamo.com": "linux",
+		"moodle.edge.gocolumbiamo.com": "linux",
+		"sectrack2.edge.gocolumbiamo.com": "windows",
+		"apk.edge.gocolumbiamo.com": "linux",
+		"phpapps.edge.gocolumbiamo.com": "linux",
+		"api.edge.gocolumbiamo.com": "linux",
+		"sectrack-dev.edge.gocolumbiamo.com": "linux",
+		"SecTrack2": "windows",
+		"Pi": "linux",
+		"SecTrack_2.1": "windows",
+		"sectrackUS-dev.edge.gocolumbiamo.com": "linux",
+		"sectrack2": "windows",
+		"sectrackus.edge.gocolumbiamo.com": "linux",
+		"hive.edge.gocolumbiamo.com": "linux"
+	},
+	"security.workspace.trust.banner": "never",
+	"security.workspace.trust.emptyWindow": false,
+	"security.workspace.trust.enabled": false,
+	"security.workspace.trust.startupPrompt": "never",
+	"settingsSync.ignoredSettings": [
+		"remote.SSH.configFile",
+		"-window.zoomLevel"
+	],
+	"svg.minify.cleanupIDs": false,
+	"svg.minify.convertStyleToAttrs": false,
+	"svg.minify.inlineStyles": false,
+	"svg.minify.mergePaths": false,
+	"svg.minify.prefixIds": false,
+	"svg.preview.mode": "svg",
+	"svg.preview.toolbarSize": "mini",
+	"window.restoreWindows": "none",
+	"workbench.editorAssociations": {
+		"*.png": "luna.editor",
+		"*.svg": "default",
+		"git-rebase-todo": "gitlens.rebase"
+	},
+	"workbench.startupEditor": "none",
+	"markdown.extension.list.indentationSize": "inherit",
+	"markdown.extension.print.imgToBase64": true,
+	"markdown.extension.print.theme": "dark",
+	"markdown.extension.print.absoluteImgPath": false,
+	"workbench.colorTheme": "Default Dark+",
+	"hediet.vscode-drawio.codeLinkActivated": false,
+	"indentRainbow.colorOnWhiteSpaceOnly": true,
+	"indentRainbow.indicatorStyle": "light",
+	"indentRainbow.lightIndicatorStyleLineWidth": 4,
+	"indentRainbow.updateDelay": 250,
+	"WavPreview.autoAnalyze": true,
+	"gitlens.advanced.messages": {
+		"suppressCreatePullRequestPrompt": true
+	},
+	"terminal.integrated.defaultProfile.windows": "Command Prompt",
+	"increment-selection.topToBottom": true,
+	"git.postCommitCommand": "sync",
+	"git.mergeEditor": true,
+	"npm.keybindingsChangedWarningShown": true,
+	"git.confirmSync": false,
+	"remoteHub.commitDirectlyWarning": "off",
+	"git.enabled": true,
+	"git.ignoreMissingGitWarning": true,
+	"gitlens.codeLens.includeSingleLineSymbols": true,
+	"markdown.experimental.validate.fileLinks.enabled": "error",
+	"markdown.experimental.validate.fileLinks.markdownFragmentLinks": "error",
+	"markdown.experimental.validate.fragmentLinks.enabled": "error",
+	"markdown.experimental.validate.referenceLinks.enabled": "error",
+	"markdown.extension.toc.orderedList": true,
+	"auto-build.defaultEnv.name": "STM32F103RE_creality",
+	"git.allowForcePush": true,
+	"editor.stickyScroll.enabled": true,
+	"terminal.integrated.enableMultiLinePasteWarning": false,
+	"editor.unicodeHighlight.invisibleCharacters": false,
+	"python.defaultInterpreterPath": "c:\\Python27\\python.exe",
+	"editor.formatOnType": true,
+	"intelephense.environment.shortOpenTag": false,
+	"intelephense.format.braces": "allman",
+	"liveServer.settings.host": "",
+	"liveServer.settings.NoBrowser": true,
+	"liveServer.settings.useWebExt": true,
+	"[css]": {
+		"editor.defaultFormatter": "vscode.css-language-features"
+	},
+	"liveServer.settings.fullReload": true,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"livePreview.showServerStatusNotifications": true,
+	"livePreview.autoRefreshPreview": "On Changes to Saved Files",
+	"git.openRepositoryInParentFolders": "never",
+	"formatFiles.extensionsToInclude": ".php",
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"diffEditor.ignoreTrimWhitespace": false,
+	"html.format.indentInnerHtml": true,
+	"terminal.integrated.allowMnemonics": true,
+	"terminal.integrated.cursorBlinking": true,
+	"terminal.integrated.enableBell": true,
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features"
+	},
+	"[typescript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "vscode.json-language-features"
+	},
+	"remote.tunnels.alwaysUpdateCLI": true,
+	"[markdown]": {
+		"editor.defaultFormatter": "yzhang.markdown-all-in-one"
+	},
+	"sonarlint.rules": {
+		"docker:S2260": {
+			"level": "on"
+		},
+		"php:S103": {
+			"level": "off"
+		},
+		"php:S107": {
+			"level": "off"
+		},
+		"php:S121": {
+			"level": "off"
+		},
+		"php:S105": {
+			"level": "off"
+		},
+		"php:S6600": {
+			"level": "off"
+		},
+		"php:S4833": {
+			"level": "off"
+		},
+		"php:S113": {
+			"level": "off"
+		}
+	},
+	"cSpell.enabled": false,
+	"intelephense.files.exclude": [
+		"**/.svn/**",
+		"**/.hg/**",
+		"**/CVS/**",
+		"**/.DS_Store/**",
+		"**/node_modules/**",
+		"**/bower_components/**",
+		"**/vendor/**/{Tests,tests}/**",
+		"**/.history/**",
+		"**/vendor/**/vendor/**",
+		"**/.git/**"
+	],
+	"files.exclude": {
+		"**/.git": false
+	},
+	"window.commandCenter": false,
+	"git.confirmForcePush": false,
+	"files.autoSave": "afterDelay",
+	"filesize.showGzipInStatusBar": true,
+	"filesize.use24HourFormat": false,
+	"filesize.useDecimal": true,
+	"editor.minimap.enabled": false,
+	"gitlens.codeLens.recentChange.enabled": false,
+	"gitlens.codeLens.authors.enabled": false,
+	"editor.inlineSuggest.suppressSuggestions": true,
+	"workbench.editor.empty.hint": "hidden",
+	"window.density.editorTabHeight": "compact",
+	"workbench.editor.pinnedTabsOnSeparateRow": true,
+	"editor.codeActionsOnSave": {},
+	"scm.experimental.showSyncView": true,
+	"debug.toolBarLocation": "commandCenter",
+	"cody.inlineChat.enabled": false,
+	"editor.multiDocumentOccurrencesHighlight": true,
+	"VSCodeCounter.languages": {
+		"cpp": {
+			"aliases": [
+				"C++",
+				"Cpp",
+				"cpp"
+			],
+			"filenames": [],
+			"extensions": [
+				".cpp",
+				".cc",
+				".cxx",
+				".c++",
+				".hpp",
+				".hh",
+				".hxx",
+				".h++",
+				".h",
+				".ii",
+				".ino",
+				".inl",
+				".ipp",
+				".ixx",
+				".tpp",
+				".txx",
+				".hpp.in",
+				".h.in"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": [
+				[
+					"R(\"",
+					"\")"
+				]
+			]
+		},
+		"javascriptreact": {
+			"aliases": [
+				"JavaScript JSX",
+				"JavaScript React",
+				"jsx"
+			],
+			"filenames": [],
+			"extensions": [
+				".jsx"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"{/*",
+					"*/}"
+				],
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": [
+				[
+					"`",
+					"`"
+				]
+			]
+		},
+		"typescriptreact": {
+			"aliases": [
+				"TypeScript JSX",
+				"TypeScript React",
+				"tsx"
+			],
+			"filenames": [],
+			"extensions": [
+				".tsx"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"{/*",
+					"*/}"
+				],
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": [
+				[
+					"`",
+					"`"
+				]
+			]
+		},
+		"bat": {
+			"aliases": [
+				"Batch",
+				"bat"
+			],
+			"filenames": [],
+			"extensions": [
+				".bat",
+				".cmd"
+			],
+			"lineComments": [
+				"::",
+				"REM",
+				"@REM",
+				"rem",
+				"@rem"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"clojure": {
+			"aliases": [
+				"Clojure",
+				"clojure"
+			],
+			"filenames": [],
+			"extensions": [
+				".clj",
+				".cljs",
+				".cljc",
+				".cljx",
+				".clojure",
+				".edn"
+			],
+			"lineComments": [
+				";;"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"coffeescript": {
+			"aliases": [
+				"CoffeeScript",
+				"coffeescript",
+				"coffee"
+			],
+			"filenames": [],
+			"extensions": [
+				".coffee",
+				".cson",
+				".iced"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [
+				[
+					"###",
+					"###"
+				]
+			],
+			"blockStrings": []
+		},
+		"jsonc": {
+			"aliases": [
+				"JSON with Comments"
+			],
+			"filenames": [
+				"settings.json",
+				"launch.json",
+				"tasks.json",
+				"keybindings.json",
+				"extensions.json",
+				"argv.json",
+				"profiles.json",
+				"devcontainer.json",
+				".devcontainer.json",
+				"babel.config.json",
+				".babelrc.json",
+				".ember-cli",
+				"typedoc.json",
+				"tsconfig.json",
+				"jsconfig.json",
+				"devcontainer-feature.json"
+			],
+			"extensions": [
+				".code-workspace",
+				"language-configuration.json",
+				"icon-theme.json",
+				"color-theme.json",
+				".jsonc",
+				".eslintrc",
+				".eslintrc.json",
+				".jsfmtrc",
+				".jshintrc",
+				".swcrc",
+				".hintrc",
+				".babelrc",
+				"cspell-ext.json",
+				"cspell-default.json",
+				"cspell.json",
+				"cspell.config.json",
+				"cSpell.json"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"json": {
+			"aliases": [
+				"JSON",
+				"json",
+				"Json"
+			],
+			"filenames": [
+				"composer.lock",
+				".watchmanconfig",
+				"Pipfile.lock"
+			],
+			"extensions": [
+				".code-profile",
+				".json",
+				".bowerrc",
+				".jscsrc",
+				".webmanifest",
+				".js.map",
+				".css.map",
+				".ts.map",
+				".har",
+				".jslintrc",
+				".jsonld",
+				".geojson",
+				".ipynb",
+				".vuerc",
+				".tsbuildinfo"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"c": {
+			"aliases": [
+				"C",
+				"c"
+			],
+			"filenames": [],
+			"extensions": [
+				".c",
+				".i"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"cuda-cpp": {
+			"aliases": [
+				"CUDA C++"
+			],
+			"filenames": [],
+			"extensions": [
+				".cu",
+				".cuh"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"csharp": {
+			"aliases": [
+				"C#",
+				"csharp"
+			],
+			"filenames": [],
+			"extensions": [
+				".cs",
+				".csx",
+				".cake"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"css": {
+			"aliases": [
+				"CSS",
+				"css"
+			],
+			"filenames": [],
+			"extensions": [
+				".css"
+			],
+			"lineComments": [],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"dart": {
+			"aliases": [
+				"Dart"
+			],
+			"filenames": [],
+			"extensions": [
+				".dart"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"diff": {
+			"aliases": [
+				"Diff",
+				"diff"
+			],
+			"filenames": [],
+			"extensions": [
+				".diff",
+				".patch",
+				".rej"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [
+				[
+					"#",
+					" "
+				]
+			],
+			"blockStrings": []
+		},
+		"dockerfile": {
+			"aliases": [
+				"Docker",
+				"Dockerfile",
+				"Containerfile"
+			],
+			"filenames": [
+				"Dockerfile",
+				"Containerfile"
+			],
+			"extensions": [
+				".dockerfile",
+				".containerfile"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"ignore": {
+			"aliases": [
+				"Ignore",
+				"ignore"
+			],
+			"filenames": [
+				".vscodeignore",
+				".markdownlintignore",
+				".dockerignore"
+			],
+			"extensions": [
+				".gitignore_global",
+				".gitignore",
+				".git-blame-ignore-revs",
+				".npmignore"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"fsharp": {
+			"aliases": [
+				"F#",
+				"FSharp",
+				"fsharp"
+			],
+			"filenames": [],
+			"extensions": [
+				".fs",
+				".fsi",
+				".fsx",
+				".fsscript"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"(*",
+					"*)"
+				]
+			],
+			"blockStrings": []
+		},
+		"git-commit": {
+			"aliases": [
+				"Git Commit Message",
+				"git-commit"
+			],
+			"filenames": [
+				"COMMIT_EDITMSG",
+				"MERGE_MSG"
+			],
+			"extensions": [],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [
+				[
+					"#",
+					" "
+				]
+			],
+			"blockStrings": []
+		},
+		"git-rebase": {
+			"aliases": [
+				"Git Rebase Message",
+				"git-rebase"
+			],
+			"filenames": [
+				"git-rebase-todo"
+			],
+			"extensions": [],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [
+				[
+					"#",
+					" "
+				]
+			],
+			"blockStrings": []
+		},
+		"go": {
+			"aliases": [
+				"Go"
+			],
+			"filenames": [],
+			"extensions": [
+				".go"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"groovy": {
+			"aliases": [
+				"Groovy",
+				"groovy"
+			],
+			"filenames": [
+				"Jenkinsfile"
+			],
+			"extensions": [
+				".groovy",
+				".gvy",
+				".gradle",
+				".jenkinsfile",
+				".nf"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"handlebars": {
+			"aliases": [
+				"Handlebars",
+				"handlebars"
+			],
+			"filenames": [],
+			"extensions": [
+				".handlebars",
+				".hbs",
+				".hjs"
+			],
+			"lineComments": [],
+			"blockComments": [
+				[
+					"{{!--",
+					"--}}"
+				]
+			],
+			"blockStrings": []
+		},
+		"hlsl": {
+			"aliases": [
+				"HLSL",
+				"hlsl"
+			],
+			"filenames": [],
+			"extensions": [
+				".hlsl",
+				".hlsli",
+				".fx",
+				".fxh",
+				".vsh",
+				".psh",
+				".cginc",
+				".compute"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"html": {
+			"aliases": [
+				"HTML",
+				"htm",
+				"html",
+				"xhtml"
+			],
+			"filenames": [],
+			"extensions": [
+				".html",
+				".htm",
+				".shtml",
+				".xhtml",
+				".xht",
+				".mdoc",
+				".jsp",
+				".asp",
+				".aspx",
+				".jshtm",
+				".volt",
+				".ejs",
+				".rhtml"
+			],
+			"lineComments": [],
+			"blockComments": [
+				[
+					"<!--",
+					"-->"
+				]
+			],
+			"blockStrings": []
+		},
+		"ini": {
+			"aliases": [
+				"Ini",
+				"ini"
+			],
+			"filenames": [
+				".flake8",
+				".pep8",
+				".pylintrc",
+				".pypirc"
+			],
+			"extensions": [
+				".ini"
+			],
+			"lineComments": [
+				";"
+			],
+			"blockComments": [
+				[
+					";",
+					" "
+				]
+			],
+			"blockStrings": []
+		},
+		"properties": {
+			"aliases": [
+				"Properties",
+				"properties"
+			],
+			"filenames": [
+				"gitconfig",
+				".env"
+			],
+			"extensions": [
+				".conf",
+				".properties",
+				".cfg",
+				".directory",
+				".gitattributes",
+				".gitconfig",
+				".gitmodules",
+				".editorconfig",
+				".npmrc"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [
+				[
+					"#",
+					" "
+				]
+			],
+			"blockStrings": []
+		},
+		"java": {
+			"aliases": [
+				"Java",
+				"java"
+			],
+			"filenames": [],
+			"extensions": [
+				".java",
+				".jav"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"javascript": {
+			"aliases": [
+				"JavaScript",
+				"javascript",
+				"js"
+			],
+			"filenames": [
+				"jakefile"
+			],
+			"extensions": [
+				".js",
+				".es6",
+				".mjs",
+				".cjs",
+				".pac"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"jsx-tags": {
+			"aliases": [],
+			"filenames": [],
+			"extensions": [],
+			"lineComments": [],
+			"blockComments": [
+				[
+					"{/*",
+					"*/}"
+				]
+			],
+			"blockStrings": []
+		},
+		"jsonl": {
+			"aliases": [
+				"JSON Lines"
+			],
+			"filenames": [],
+			"extensions": [
+				".jsonl"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"snippets": {
+			"aliases": [
+				"Code Snippets"
+			],
+			"filenames": [],
+			"extensions": [
+				".code-snippets"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"julia": {
+			"aliases": [
+				"Julia",
+				"julia"
+			],
+			"filenames": [],
+			"extensions": [
+				".jl"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [
+				[
+					"#=",
+					"=#"
+				]
+			],
+			"blockStrings": []
+		},
+		"juliamarkdown": {
+			"aliases": [
+				"Julia Markdown",
+				"juliamarkdown"
+			],
+			"filenames": [],
+			"extensions": [
+				".jmd"
+			],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"tex": {
+			"aliases": [
+				"TeX",
+				"tex"
+			],
+			"filenames": [],
+			"extensions": [
+				".sty",
+				".cls",
+				".bbx",
+				".cbx"
+			],
+			"lineComments": [
+				"%"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"latex": {
+			"aliases": [
+				"LaTeX",
+				"latex"
+			],
+			"filenames": [],
+			"extensions": [
+				".tex",
+				".ltx",
+				".ctx"
+			],
+			"lineComments": [
+				"%"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"bibtex": {
+			"aliases": [
+				"BibTeX",
+				"bibtex"
+			],
+			"filenames": [],
+			"extensions": [
+				".bib"
+			],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"cpp_embedded_latex": {
+			"aliases": [],
+			"filenames": [],
+			"extensions": [],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"markdown_latex_combined": {
+			"aliases": [],
+			"filenames": [],
+			"extensions": [],
+			"lineComments": [],
+			"blockComments": [
+				[
+					"<!--",
+					"-->"
+				]
+			],
+			"blockStrings": []
+		},
+		"less": {
+			"aliases": [
+				"Less",
+				"less"
+			],
+			"filenames": [],
+			"extensions": [
+				".less"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"log": {
+			"aliases": [
+				"Log"
+			],
+			"filenames": [],
+			"extensions": [
+				".log",
+				"*.log.?"
+			],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"lua": {
+			"aliases": [
+				"Lua",
+				"lua"
+			],
+			"filenames": [],
+			"extensions": [
+				".lua"
+			],
+			"lineComments": [
+				"--"
+			],
+			"blockComments": [
+				[
+					"--[[",
+					"]]"
+				]
+			],
+			"blockStrings": []
+		},
+		"makefile": {
+			"aliases": [
+				"Makefile",
+				"makefile"
+			],
+			"filenames": [
+				"Makefile",
+				"makefile",
+				"GNUmakefile",
+				"OCamlMakefile"
+			],
+			"extensions": [
+				".mak",
+				".mk"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"markdown": {
+			"aliases": [
+				"Markdown",
+				"markdown"
+			],
+			"filenames": [],
+			"extensions": [
+				".md",
+				".mkd",
+				".mdwn",
+				".mdown",
+				".markdown",
+				".markdn",
+				".mdtxt",
+				".mdtext",
+				".workbook"
+			],
+			"lineComments": [],
+			"blockComments": [
+				[
+					"<!--",
+					"-->"
+				]
+			],
+			"blockStrings": []
+		},
+		"markdown-math": {
+			"aliases": [],
+			"filenames": [],
+			"extensions": [],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"wat": {
+			"aliases": [
+				"WebAssembly Text Format"
+			],
+			"filenames": [],
+			"extensions": [
+				".wat",
+				".wasm"
+			],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"objective-c": {
+			"aliases": [
+				"Objective-C"
+			],
+			"filenames": [],
+			"extensions": [
+				".m"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"objective-cpp": {
+			"aliases": [
+				"Objective-C++"
+			],
+			"filenames": [],
+			"extensions": [
+				".mm"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"perl": {
+			"aliases": [
+				"Perl",
+				"perl"
+			],
+			"filenames": [],
+			"extensions": [
+				".pl",
+				".pm",
+				".pod",
+				".t",
+				".PL",
+				".psgi"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"raku": {
+			"aliases": [
+				"Raku",
+				"Perl6",
+				"perl6"
+			],
+			"filenames": [],
+			"extensions": [
+				".raku",
+				".rakumod",
+				".rakutest",
+				".rakudoc",
+				".nqp",
+				".p6",
+				".pl6",
+				".pm6"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"php": {
+			"aliases": [
+				"PHP",
+				"php"
+			],
+			"filenames": [],
+			"extensions": [
+				".php",
+				".php4",
+				".php5",
+				".phtml",
+				".ctp"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"powershell": {
+			"aliases": [
+				"PowerShell",
+				"powershell",
+				"ps",
+				"ps1"
+			],
+			"filenames": [],
+			"extensions": [
+				".ps1",
+				".psm1",
+				".psd1",
+				".pssc",
+				".psrc"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [
+				[
+					"<#",
+					"#>"
+				]
+			],
+			"blockStrings": []
+		},
+		"jade": {
+			"aliases": [
+				"Pug",
+				"Jade",
+				"jade"
+			],
+			"filenames": [],
+			"extensions": [
+				".pug",
+				".jade"
+			],
+			"lineComments": [
+				"//-"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"python": {
+			"aliases": [
+				"Python",
+				"py"
+			],
+			"filenames": [
+				"SConstruct",
+				"SConscript"
+			],
+			"extensions": [
+				".py",
+				".rpy",
+				".pyw",
+				".cpy",
+				".gyp",
+				".gypi",
+				".pyi",
+				".ipy",
+				".pyt"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [
+				[
+					"\"\"\"",
+					"\"\"\""
+				]
+			],
+			"blockStrings": []
+		},
+		"r": {
+			"aliases": [
+				"R",
+				"r"
+			],
+			"filenames": [],
+			"extensions": [
+				".r",
+				".rhistory",
+				".rprofile",
+				".rt"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"razor": {
+			"aliases": [
+				"Razor",
+				"razor"
+			],
+			"filenames": [],
+			"extensions": [
+				".cshtml",
+				".razor"
+			],
+			"lineComments": [],
+			"blockComments": [
+				[
+					"<!--",
+					"-->"
+				]
+			],
+			"blockStrings": []
+		},
+		"restructuredtext": {
+			"aliases": [
+				"reStructuredText"
+			],
+			"filenames": [],
+			"extensions": [
+				".rst"
+			],
+			"lineComments": [
+				".."
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"ruby": {
+			"aliases": [
+				"Ruby",
+				"rb"
+			],
+			"filenames": [
+				"rakefile",
+				"gemfile",
+				"guardfile",
+				"podfile",
+				"capfile",
+				"cheffile",
+				"hobofile",
+				"vagrantfile",
+				"appraisals",
+				"rantfile",
+				"berksfile",
+				"berksfile.lock",
+				"thorfile",
+				"puppetfile",
+				"dangerfile",
+				"brewfile",
+				"fastfile",
+				"appfile",
+				"deliverfile",
+				"matchfile",
+				"scanfile",
+				"snapfile",
+				"gymfile"
+			],
+			"extensions": [
+				".rb",
+				".rbx",
+				".rjs",
+				".gemspec",
+				".rake",
+				".ru",
+				".erb",
+				".podspec",
+				".rbi"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [
+				[
+					"=begin",
+					"=end"
+				]
+			],
+			"blockStrings": []
+		},
+		"rust": {
+			"aliases": [
+				"Rust",
+				"rust",
+				"rs"
+			],
+			"filenames": [],
+			"extensions": [
+				".rs"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"scss": {
+			"aliases": [
+				"SCSS",
+				"scss"
+			],
+			"filenames": [],
+			"extensions": [
+				".scss"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"search-result": {
+			"aliases": [
+				"Search Result"
+			],
+			"filenames": [],
+			"extensions": [
+				".code-search"
+			],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"shaderlab": {
+			"aliases": [
+				"ShaderLab",
+				"shaderlab"
+			],
+			"filenames": [],
+			"extensions": [
+				".shader"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"shellscript": {
+			"aliases": [
+				"Shell Script",
+				"shellscript",
+				"bash",
+				"fish",
+				"sh",
+				"zsh",
+				"ksh",
+				"csh"
+			],
+			"filenames": [
+				"APKBUILD",
+				"PKGBUILD",
+				".envrc",
+				".hushlogin",
+				"zshrc",
+				"zshenv",
+				"zlogin",
+				"zprofile",
+				"zlogout",
+				"bashrc_Apple_Terminal",
+				"zshrc_Apple_Terminal"
+			],
+			"extensions": [
+				".sh",
+				".bash",
+				".bashrc",
+				".bash_aliases",
+				".bash_profile",
+				".bash_login",
+				".ebuild",
+				".profile",
+				".bash_logout",
+				".xprofile",
+				".xsession",
+				".xsessionrc",
+				".Xsession",
+				".zsh",
+				".zshrc",
+				".zprofile",
+				".zlogin",
+				".zlogout",
+				".zshenv",
+				".zsh-theme",
+				".fish",
+				".ksh",
+				".csh",
+				".cshrc",
+				".tcshrc",
+				".yashrc",
+				".yash_profile"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"sql": {
+			"aliases": [
+				"SQL"
+			],
+			"filenames": [],
+			"extensions": [
+				".sql",
+				".dsql"
+			],
+			"lineComments": [
+				"--"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"swift": {
+			"aliases": [
+				"Swift",
+				"swift"
+			],
+			"filenames": [],
+			"extensions": [
+				".swift"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"typescript": {
+			"aliases": [
+				"TypeScript",
+				"ts",
+				"typescript"
+			],
+			"filenames": [],
+			"extensions": [
+				".ts",
+				".cts",
+				".mts"
+			],
+			"lineComments": [
+				"//"
+			],
+			"blockComments": [
+				[
+					"/*",
+					"*/"
+				]
+			],
+			"blockStrings": []
+		},
+		"vb": {
+			"aliases": [
+				"Visual Basic",
+				"vb"
+			],
+			"filenames": [],
+			"extensions": [
+				".vb",
+				".brs",
+				".vbs",
+				".bas",
+				".vba"
+			],
+			"lineComments": [
+				"'"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"xml": {
+			"aliases": [
+				"XML",
+				"xml"
+			],
+			"filenames": [],
+			"extensions": [
+				".xml",
+				".xsd",
+				".ascx",
+				".atom",
+				".axml",
+				".axaml",
+				".bpmn",
+				".cpt",
+				".csl",
+				".csproj",
+				".csproj.user",
+				".dita",
+				".ditamap",
+				".dtd",
+				".ent",
+				".mod",
+				".dtml",
+				".fsproj",
+				".fxml",
+				".iml",
+				".isml",
+				".jmx",
+				".launch",
+				".menu",
+				".mxml",
+				".nuspec",
+				".opml",
+				".owl",
+				".proj",
+				".props",
+				".pt",
+				".publishsettings",
+				".pubxml",
+				".pubxml.user",
+				".rbxlx",
+				".rbxmx",
+				".rdf",
+				".rng",
+				".rss",
+				".shproj",
+				".storyboard",
+				".svg",
+				".targets",
+				".tld",
+				".tmx",
+				".vbproj",
+				".vbproj.user",
+				".vcxproj",
+				".vcxproj.filters",
+				".wsdl",
+				".wxi",
+				".wxl",
+				".wxs",
+				".xaml",
+				".xbl",
+				".xib",
+				".xlf",
+				".xliff",
+				".xpdl",
+				".xul",
+				".xoml",
+				".config",
+				".xsl",
+				".plist",
+				".mobileconfig"
+			],
+			"lineComments": [],
+			"blockComments": [
+				[
+					"<!--",
+					"-->"
+				]
+			],
+			"blockStrings": []
+		},
+		"xsl": {
+			"aliases": [
+				"XSL",
+				"xsl"
+			],
+			"filenames": [],
+			"extensions": [
+				".xsl",
+				".xslt"
+			],
+			"lineComments": [],
+			"blockComments": [
+				[
+					"<!--",
+					"-->"
+				]
+			],
+			"blockStrings": []
+		},
+		"dockercompose": {
+			"aliases": [
+				"Compose",
+				"compose"
+			],
+			"filenames": [],
+			"extensions": [],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"yaml": {
+			"aliases": [
+				"YAML",
+				"yaml"
+			],
+			"filenames": [
+				".condarc"
+			],
+			"extensions": [
+				".yml",
+				".eyaml",
+				".eyml",
+				".yaml",
+				".cff"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"xquery": {
+			"aliases": [
+				"XQuery",
+				"xquery"
+			],
+			"filenames": [],
+			"extensions": [
+				".xq",
+				".xql",
+				".xqm",
+				".xqy",
+				".xquery"
+			],
+			"lineComments": [
+				[
+					"(:",
+					":)"
+				],
+				[
+					"(:",
+					":)"
+				],
+				[
+					"(:",
+					":)"
+				],
+				[
+					"(:",
+					":)"
+				]
+			],
+			"blockComments": [
+				[
+					"(:~",
+					"~:)"
+				]
+			],
+			"blockStrings": []
+		},
+		"drawio": {
+			"aliases": [
+				"Draw.io",
+				"drawio"
+			],
+			"filenames": [],
+			"extensions": [
+				".drawio",
+				".dio",
+				".dio.svg",
+				".drawio.svg",
+				".drawio.png",
+				".dio.png"
+			],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"svg": {
+			"aliases": [
+				"SVG",
+				"svg"
+			],
+			"filenames": [],
+			"extensions": [
+				".svg"
+			],
+			"lineComments": [],
+			"blockComments": [
+				[
+					"<!--",
+					"-->"
+				]
+			],
+			"blockStrings": []
+		},
+		"csv": {
+			"aliases": [
+				"CSV",
+				"csv"
+			],
+			"filenames": [],
+			"extensions": [
+				".csv"
+			],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"tsv": {
+			"aliases": [
+				"TSV",
+				"tsv"
+			],
+			"filenames": [],
+			"extensions": [
+				".tsv",
+				".tab"
+			],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"csv (pipe)": {
+			"aliases": [
+				"CSV (pipe)",
+				"csv (pipe)"
+			],
+			"filenames": [],
+			"extensions": [],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"csv (whitespace)": {
+			"aliases": [
+				"CSV (whitespace)",
+				"csv (whitespace)"
+			],
+			"filenames": [],
+			"extensions": [],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"csv (semicolon)": {
+			"aliases": [
+				"CSV (semicolon)",
+				"csv (semicolon)"
+			],
+			"filenames": [],
+			"extensions": [],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"dynamic csv": {
+			"aliases": [
+				"Dynamic CSV",
+				"dynamic csv"
+			],
+			"filenames": [],
+			"extensions": [],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"rainbow hover markup": {
+			"aliases": [],
+			"filenames": [],
+			"extensions": [],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"dotenv": {
+			"aliases": [
+				"Environment Variables",
+				"dotenv",
+				"env"
+			],
+			"filenames": [],
+			"extensions": [
+				".env",
+				".env-sample",
+				".env.example",
+				".env.local",
+				".env.dev",
+				".env.dev.local",
+				".env.development",
+				".env.development.local",
+				".env.test",
+				".env.test.local",
+				".env.testing",
+				".env.qa",
+				".env.qa.local",
+				".env.uat",
+				".env.uat.local",
+				".env.stag",
+				".env.stag.local",
+				".env.staging",
+				".env.staging.local",
+				".env.production",
+				".env.production.local"
+			],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"jinja": {
+			"aliases": [
+				"Jinja"
+			],
+			"filenames": [],
+			"extensions": [
+				".j2",
+				".jinja2"
+			],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"pip-requirements": {
+			"aliases": [
+				"pip requirements",
+				"requirements.txt"
+			],
+			"filenames": [
+				"constraints.txt",
+				"requirements.in",
+				"requirements.txt"
+			],
+			"extensions": [],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"toml": {
+			"aliases": [],
+			"filenames": [
+				"Pipfile",
+				"poetry.lock"
+			],
+			"extensions": [],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"ssh_config": {
+			"aliases": [
+				"SSH Config",
+				"ssh_config"
+			],
+			"filenames": [
+				"ssh.config"
+			],
+			"extensions": [],
+			"lineComments": [
+				"#"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"ra_syntax_tree": {
+			"aliases": [],
+			"filenames": [],
+			"extensions": [
+				".rast"
+			],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"todo": {
+			"aliases": [
+				"Tasks",
+				"todo"
+			],
+			"filenames": [],
+			"extensions": [
+				".todo",
+				".tasks"
+			],
+			"lineComments": [],
+			"blockComments": [],
+			"blockStrings": []
+		},
+		"vbs": {
+			"aliases": [
+				"VBScript",
+				"vbs"
+			],
+			"filenames": [],
+			"extensions": [
+				".vbs"
+			],
+			"lineComments": [
+				"'"
+			],
+			"blockComments": [],
+			"blockStrings": []
+		}
+	}
 }
