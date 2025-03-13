@@ -917,7 +917,7 @@ require('lazy').setup({
 		-- If you want to load the plugin at startup, add something like event = "VeryLazy",
 		-- or lazy = false. One of both options will work.
 		opts = {
-			enabled = true, -- if you want to enable the plugin
+			enabled = true,   -- if you want to enable the plugin
 			virtual_text_column = 120, -- virtual text start column, check Start virtual text at column section for more options
 
 			message_template = '<summary> • <date> • <author> • <<sha>>',
@@ -925,6 +925,26 @@ require('lazy').setup({
 			date_format = '%r',
 			delay = 0,
 		},
+	},
+
+	-- UI
+	{ -- Indent Rainbow
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
+		opts = function(_, opts)
+			return require("indent-rainbowline").make_opts(opts, {
+				color_transparency = 0.035,
+			})
+		end,
+		dependencies = {
+			"TheGLander/indent-rainbowline.nvim",
+		},
+	},
+	{ -- Rainbow brackets
+		'HiPhish/rainbow-delimiters.nvim',
+		lazy = false,
+		main = 'rainbow-delimiters.setup',
+		opts = {},
 	},
 }, {
 	ui = {
