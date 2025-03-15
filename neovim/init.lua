@@ -215,7 +215,7 @@ require('lazy').setup({
 	-- Then, because we use the `opts` key (recommended), the configuration runs
 	-- after the plugin has been loaded as `require(MODULE).setup(opts)`.
 
-	{                   -- Useful plugin to show you pending keybinds.
+	{                 -- Useful plugin to show you pending keybinds.
 		'folke/which-key.nvim',
 		event = 'VimEnter', -- Sets the loading event to 'VimEnter'
 		opts = {
@@ -909,6 +909,27 @@ require('lazy').setup({
 		--    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
 	},
 
+	{ --LazyGit integration
+		"kdheepak/lazygit.nvim",
+		lazy = true,
+		cmd = {
+			"LazyGit",
+			"LazyGitConfig",
+			"LazyGitCurrentFile",
+			"LazyGitFilter",
+			"LazyGitFilterCurrentFile",
+		},
+		-- optional for floating window border decoration
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+		-- setting the keybinding for LazyGit with 'keys' is recommended in
+		-- order to load the plugin when the command is run for the first time
+		keys = {
+			{ "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" }
+		}
+	}
+
 	-- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
 	-- init.lua. If you want these files, they are in the repository, so you can just download them and
 	-- place them in the correct locations.
@@ -959,3 +980,19 @@ require('lazy').setup({
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- Allowing Lazy to be close with the Escape key.
+local user_grp = vim.api.nvim_create_augroup("LazyUserGroup", { clear = true })
+vim.api.nvim_create_autocmd("FileType", {
+	pattern = "lazy",
+	desc = "Quit lazy with <esc>",
+	callback = function()
+		vim.keymap.set(
+			"n",
+			"<esc>",
+			function() vim.api.nvim_win_close(0, false) end,
+			{ buffer = true, nowait = true }
+		)
+	end,
+	group = user_grp,
+})
