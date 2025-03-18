@@ -1,0 +1,1 @@
+cp -f "../init.lua" "~/.config/nvim/init.lua"

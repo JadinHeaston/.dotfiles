@@ -1,0 +1,1 @@
+xcopy /s /Y "%~dp0..\init.lua" "%userprofile%\AppData\Local\nvim\init.lua"
