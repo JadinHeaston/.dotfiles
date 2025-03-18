@@ -974,6 +974,10 @@ require('lazy').setup({
 		main = 'rainbow-delimiters.setup',
 		opts = {},
 	},
+
+    { -- Autocomplete for 
+		'jiangmiao/auto-pairs'
+	}
 }, {
 	ui = {
 		-- If you are using a Nerd Font: set icons to an empty table which will use the
