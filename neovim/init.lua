@@ -1005,8 +1005,7 @@ require("lazy").setup({
 		main = "rainbow-delimiters.setup",
 		opts = {},
 	},
-
-	{ -- Autocomplete for
+	{ -- Autocomplete for symbols.
 		"jiangmiao/auto-pairs",
 	},
 }, {
