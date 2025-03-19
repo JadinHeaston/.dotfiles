@@ -987,6 +987,21 @@ require("lazy").setup({
 	},
 
 	-- UI
+	{ --Theme
+		"catppuccin/nvim",
+		name = "catppuccin",
+		priority = 1000,
+		opts = {
+			flavour = "mocha"
+		}
+	},
+	-- Highlightign todo, notes, etc in comments
+	{
+		"folke/todo-comments.nvim",
+		event = "VimEnter",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		opts = { signs = false },
+	},
 	{ -- Indent Rainbow
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
