@@ -947,7 +947,6 @@ require("lazy").setup({
 		--    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
 		--    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
 	},
-
 	{ --LazyGit integration
 		"kdheepak/lazygit.nvim",
 		lazy = true,
@@ -985,6 +984,17 @@ require("lazy").setup({
 			date_format = "%r",
 			delay = 0,
 		},
+	},
+	{ -- Clipboard manager
+		"AckslD/nvim-neoclip.lua",
+		-- need to lazy load, otherwise telescope sometimes deletes all history
+		dependencies = {
+			{ 'nvim-telescope/telescope.nvim' }, -- Required, but not stated here because it breaks things.
+		},
+		config = function()
+			require('neoclip').setup()
+			require('telescope').load_extension('neoclip')
+		end,
 	},
 
 	-- UI
