@@ -19,3 +19,5 @@ tar xf lazygit.tar.gz lazygit
 sudo install lazygit -y -D -t /usr/local/bin/
 rm lazygit lazygit.tar.gz
 
+## Installing SSHFS for remote development.
+# sudo apt install sshfs
