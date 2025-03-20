@@ -1013,6 +1013,18 @@ require("lazy").setup({
 		dependencies = { "nvim-lua/plenary.nvim" },
 		opts = { signs = false },
 	},
+	{ -- Adding better notifications and command line.
+		"folke/noice.nvim",
+		event = "VeryLazy",
+		dependencies = {
+			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+			"MunifTanjim/nui.nvim",
+			-- OPTIONAL:
+			--   `nvim-notify` is only needed, if you want to use the notification view.
+			--   If not available, we use `mini` as the fallback
+			"rcarriga/nvim-notify",
+		}
+	},
 	{ -- Indent Rainbow
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
@@ -1025,13 +1037,13 @@ require("lazy").setup({
 			"TheGLander/indent-rainbowline.nvim",
 		},
 	},
-	{ -- Rainbow brackets
+	{ -- Rainbow Brackets
 		"HiPhish/rainbow-delimiters.nvim",
 		lazy = false,
 		main = "rainbow-delimiters.setup",
 		opts = {},
 	},
-	{ -- Autocomplete for symbols.
+	{ -- Autocomplete for symbols
 		"jiangmiao/auto-pairs",
 	},
 
