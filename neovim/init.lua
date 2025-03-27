@@ -935,6 +935,9 @@ require("lazy").setup({
 		keys = {
 			{ "<leader>lg", "<cmd>LazyGit<cr>", desc = "LazyGit" },
 		},
+		config = function()
+			require("telescope").load_extension("lazygit")
+		end,
 	},
 	{ -- Adding inline Git blames.
 		"f-person/git-blame.nvim",
