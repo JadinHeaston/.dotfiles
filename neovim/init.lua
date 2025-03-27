@@ -985,6 +985,12 @@ require("lazy").setup({
 	-- config = true,
 	-- },
 
+	{ -- Live server (HTML)
+		'barrett-ruth/live-server.nvim',
+		build = 'npm add -g live-server',
+		cmd = { 'LiveServerStart', 'LiveServerStop' },
+		config = true
+	},
 	{ -- Clipboard manager
 		"AckslD/nvim-neoclip.lua",
 		-- need to lazy load, otherwise telescope sometimes deletes all history
