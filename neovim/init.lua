@@ -1036,7 +1036,8 @@ require("lazy").setup({
 		main = "ibl",
 		opts = function(_, opts)
 			return require("indent-rainbowline").make_opts(opts, {
-				color_transparency = 0.035,
+				scope = { enabled = true },
+				color_transparency = 0.03,
 			})
 		end,
 		dependencies = {
