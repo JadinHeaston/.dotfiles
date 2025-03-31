@@ -1,6 +1,6 @@
 --[[
 =====================================================================
-==================== READ THIS BEFORE CONTINUING ====================
+=====================================================================
 =====================================================================
 ========                                    .-----.          ========
 ========         .----------------------.   | === |          ========
@@ -264,10 +264,15 @@ require("lazy").setup({
 					return vim.fn.executable("make") == 1
 				end,
 			},
-			{ "nvim-telescope/telescope-ui-select.nvim" },
+			{
+				"nvim-telescope/telescope-ui-select.nvim",
+			},
 
 			-- Useful for getting pretty icons, but requires a Nerd Font.
-			{ "nvim-tree/nvim-web-devicons",            enabled = vim.g.have_nerd_font },
+			{
+				"nvim-tree/nvim-web-devicons",
+				enabled = vim.g.have_nerd_font
+			},
 		},
 		config = function()
 			-- The easiest way to use Telescope, is to start by doing something like:
@@ -960,9 +965,7 @@ require("lazy").setup({
 		dependencies = {
 			-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
 			"MunifTanjim/nui.nvim",
-			-- OPTIONAL:
-			--   `nvim-notify` is only needed, if you want to use the notification view.
-			--   If not available, we use `mini` as the fallback
+			-- OPTIONAL: `nvim-notify` is only needed, if you want to use the notification view. `mini` is the fallback
 			"rcarriga/nvim-notify",
 		}
 	},
