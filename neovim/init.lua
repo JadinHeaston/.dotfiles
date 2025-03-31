@@ -922,7 +922,7 @@ require("lazy").setup({
 
 	{ -- Live server (HTML)
 		'barrett-ruth/live-server.nvim',
-		build = 'npm add -g live-server',
+		build = 'npm add -g live-server', --Requires NPM, can be changed.
 		cmd = { 'LiveServerStart', 'LiveServerStop' },
 		config = true
 	},
@@ -947,7 +947,7 @@ require("lazy").setup({
 			flavour = "mocha"
 		}
 	},
-	-- Highlightign todo, notes, etc in comments
+	-- Highlighting todo, notes, etc in comments
 	{
 		"folke/todo-comments.nvim",
 		event = "VimEnter",
@@ -998,7 +998,7 @@ require("lazy").setup({
 	},
 
 	-- Language Specific
-	{ -- Adding markdown preview. (Requires NPM)
+	{ -- Adding markdown preview. Requires NPM, unknown if this can be changed
 		"iamcco/markdown-preview.nvim",
 		cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
 		build = "cd app && npm install",
@@ -1032,7 +1032,7 @@ require("lazy").setup({
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
 
--- Allowing Lazy to be close with the Escape key.
+-- Allowing Lazy to be closed with the Escape key.
 local user_grp = vim.api.nvim_create_augroup("LazyUserGroup", { clear = true })
 vim.api.nvim_create_autocmd("FileType", {
 	pattern = "lazy",
