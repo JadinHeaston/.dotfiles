@@ -850,7 +850,7 @@ require("lazy").setup({
 			-- Jumping to context (upwards)
 			vim.keymap.set("n", "[c", function()
 				require("treesitter-context").go_to_context(vim.v.count1)
-			end, { silent = true, desc = "Jump to [C]ontext"  })
+			end, { silent = true, desc = "Jump to [C]ontext" })
 		end
 	},
 	{ --LazyGit integration
@@ -970,10 +970,18 @@ require("lazy").setup({
 		"lukas-reineke/indent-blankline.nvim",
 		main = "ibl",
 		opts = function(_, opts)
-			return require("indent-rainbowline").make_opts(opts, {
-				scope = { enabled = true },
-				color_transparency = 0.03,
-			})
+			return require("indent-rainbowline").make_opts(
+				{
+					scope = {
+						enabled = true,
+						show_start = false,
+						show_end = false,
+					},
+				},
+				{ --Indent Rainbowline config
+					color_transparency = 0.05,
+				}
+			)
 		end,
 		dependencies = {
 			"TheGLander/indent-rainbowline.nvim",
@@ -1036,31 +1044,3 @@ vim.api.nvim_create_autocmd("FileType", {
 	end,
 	group = user_grp,
 })
-
--- Setting up Indent Rainbow and Rainbow Bracket integration
-local highlight = {
-	"RainbowRed",
-	"RainbowYellow",
-	"RainbowBlue",
-	"RainbowOrange",
-	"RainbowGreen",
-	"RainbowViolet",
-	"RainbowCyan",
-}
-local hooks = require "ibl.hooks"
--- create the highlight groups in the highlight setup hook, so they are reset
--- every time the colorscheme changes
-hooks.register(hooks.type.HIGHLIGHT_SETUP, function()
-	vim.api.nvim_set_hl(0, "RainbowRed", { fg = "#E06C75" })
-	vim.api.nvim_set_hl(0, "RainbowYellow", { fg = "#E5C07B" })
-	vim.api.nvim_set_hl(0, "RainbowBlue", { fg = "#61AFEF" })
-	vim.api.nvim_set_hl(0, "RainbowOrange", { fg = "#D19A66" })
-	vim.api.nvim_set_hl(0, "RainbowGreen", { fg = "#98C379" })
-	vim.api.nvim_set_hl(0, "RainbowViolet", { fg = "#C678DD" })
-	vim.api.nvim_set_hl(0, "RainbowCyan", { fg = "#56B6C2" })
-end)
-
-vim.g.rainbow_delimiters = { highlight = highlight }
-require("ibl").setup { scope = { highlight = highlight } }
-
-hooks.register(hooks.type.SCOPE_HIGHLIGHT, hooks.builtin.scope_highlight_from_extmark)
