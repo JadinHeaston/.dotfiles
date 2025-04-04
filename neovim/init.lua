@@ -111,10 +111,10 @@ vim.keymap.set("n", "<leader>q", vim.diagnostic.setloclist, { desc = "Open diagn
 vim.keymap.set("t", "<Esc><Esc>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
 -- TIP: Disable arrow keys in normal mode
-vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
-vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
+vim.keymap.set("n", "<left>", '<cmd>echo "Use h to move!!"<CR>')
+vim.keymap.set("n", "<right>", '<cmd>echo "Use l to move!!"<CR>')
+vim.keymap.set("n", "<up>", '<cmd>echo "Use k to move!!"<CR>')
+vim.keymap.set("n", "<down>", '<cmd>echo "Use j to move!!"<CR>')
 
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
@@ -677,9 +677,9 @@ require("lazy").setup({
 					--    See the README about individual language/framework/plugin snippets:
 					--    https://github.com/rafamadriz/friendly-snippets
 					{
-						'rafamadriz/friendly-snippets',
+						"rafamadriz/friendly-snippets",
 						config = function()
-							require('luasnip.loaders.from_vscode').lazy_load()
+							require("luasnip.loaders.from_vscode").lazy_load()
 						end,
 					},
 				},
@@ -846,17 +846,17 @@ require("lazy").setup({
 		--    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
 		--    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
 	},
-	{ -- Adds context lines at the top when browsing nested content.
+	{ -- Adds context lines (Sticky Scroll) at the top when browsing nested content.
 		"nvim-treesitter/nvim-treesitter-context",
 		dependencies = { "nvim-treesitter/nvim-treesitter" },
 		config = function()
-			require("treesitter-context").setup();
+			require("treesitter-context").setup()
 
 			-- Jumping to context (upwards)
 			vim.keymap.set("n", "[c", function()
 				require("treesitter-context").go_to_context(vim.v.count1)
 			end, { silent = true, desc = "Jump to [C]ontext" })
-		end
+		end,
 	},
 	{ --LazyGit integration
 		"kdheepak/lazygit.nvim",
@@ -926,20 +926,20 @@ require("lazy").setup({
 	-- },
 
 	{ -- Live server (HTML)
-		'barrett-ruth/live-server.nvim',
-		build = 'npm add -g live-server', --Requires NPM, can be changed.
-		cmd = { 'LiveServerStart', 'LiveServerStop' },
-		config = true
+		"barrett-ruth/live-server.nvim",
+		build = "npm add -g live-server", --Requires NPM, can be changed.
+		cmd = { "LiveServerStart", "LiveServerStop" },
+		config = true,
 	},
 	{ -- Clipboard manager
 		"AckslD/nvim-neoclip.lua",
 		-- need to lazy load, otherwise telescope sometimes deletes all history
 		dependencies = {
-			{ 'nvim-telescope/telescope.nvim' }, -- Required, but not stated here because it breaks things.
+			{ "nvim-telescope/telescope.nvim" }, -- Required, but not stated here because it breaks things.
 		},
 		config = function()
-			require('neoclip').setup()
-			require('telescope').load_extension('neoclip')
+			require("neoclip").setup()
+			require("telescope").load_extension("neoclip")
 		end,
 	},
 
@@ -967,7 +967,7 @@ require("lazy").setup({
 			"MunifTanjim/nui.nvim",
 			-- OPTIONAL: `nvim-notify` is only needed, if you want to use the notification view. `mini` is the fallback
 			"rcarriga/nvim-notify",
-		}
+		},
 	},
 	{ -- Indent Rainbow
 		"lukas-reineke/indent-blankline.nvim",
@@ -982,7 +982,7 @@ require("lazy").setup({
 					},
 				},
 				{ --Indent Rainbowline config
-					color_transparency = 0.05,
+					color_transparency = 0.03,
 				}
 			)
 		end,
