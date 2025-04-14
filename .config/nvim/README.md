@@ -13,7 +13,7 @@
 
 This can be found in the [README.md for kickstart](https://github.com/nvim-lua/kickstart.nvim?tab=readme-ov-file#installation)
 
-- Linux: `~/.config/nvim`
+- Linux: `~/.config/nvim/`
 - Windows: `%userprofile%\AppData\Local\nvim\`
 
 ## Plugins
