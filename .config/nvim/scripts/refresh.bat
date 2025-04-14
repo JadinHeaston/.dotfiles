@@ -1,1 +1,1 @@
-xcopy /s /Y "%~dp0..\init.lua" "%userprofile%\AppData\Local\nvim\init.lua"
+xcopy /s /Y "%~dp0..\" "%userprofile%\AppData\Local\nvim\"
