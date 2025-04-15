@@ -12,5 +12,14 @@ return {
 			date_format = "%r",
 			delay = 0,
 		},
+		keys = {
+			{
+				"<leader>tgb",
+				function()
+					require("gitblame").toggle()
+				end,
+				desc = "[T]oggle [g]it [b]lame",
+			},
+		},
 	},
 }
