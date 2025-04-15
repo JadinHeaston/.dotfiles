@@ -34,7 +34,7 @@ require("lazy").setup({
 	require("lazy/plugins/ui/neoscroll"), -- Smooth scrolling.
 	require("lazy/plugins/ui/treesitter-context"), -- Adds context lines (Sticky Scroll) at the top when browsing nested content.
 	require("lazy/plugins/ui/todo-comments"), -- Highlighting todo, notes, etc in comments
-	-- require("lazy/plugins/ui/notify"), -- Adds nicer notification boxes.
+	require("lazy/plugins/ui/scrollbar"), -- Adds visible scrollbar with some integrations
 	require("lazy/plugins/ui/noice"), -- Adding better notifications and command line.
 	require("lazy/plugins/ui/indent-blankline"), -- Indent Rainbow
 	require("lazy/plugins/ui/rainbow-delimiters"), -- Rainbow Brackets
