@@ -19,6 +19,7 @@ require("lazy").setup(
 		require 'lazy/plugins/neoclip', -- Clipboard manager
 		require 'lazy/plugins/oil', -- File explorer/editor
 		require 'lazy/plugins/mini', -- Collection of various small independent plugins/modules
+		require 'lazy/plugins/auto-save', -- Adds toggleable auto saving.
 
 		-- LSP Plugins
 		require 'lazy/plugins/language/lazydev', -- Lua LSP for Neovim config, runtime and plugins
