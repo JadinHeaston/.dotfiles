@@ -29,6 +29,11 @@ vim.g.maplocalleader = " "
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+--	Loading in OS specific configuration changes. Mostly just fixing Windows support... :|
+if vim.fn.has("win32") == 1 then
+	require("os/win")
+end
+
 -- [[ Setting options ]]
 require 'options'
 
