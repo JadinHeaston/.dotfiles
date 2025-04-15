@@ -50,7 +50,9 @@ return {
 					gitsigns.diffthis("@")
 				end, { desc = "git [D]iff against last commit" })
 				-- Toggles
-				map("n", "<leader>tD", gitsigns.preview_hunk_inline, { desc = "[T]oggle git show [D]eleted" })
+				map("n", "<leader>tgB", gitsigns.blame, { desc = "[T]oggle [g]it [b]lame preview" })
+				map("n", "<leader>tgd", gitsigns.preview_hunk_inline, { desc = "[T]oggle [g]it [d]eleted hunk" })
+				map("n", "<leader>tghp", gitsigns.preview_hunk_inline, { desc = "[T]oggle [g]it [h]unk [p]review" })
 			end,
 		},
 	},
