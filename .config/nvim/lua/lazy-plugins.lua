@@ -31,6 +31,7 @@ require("lazy").setup({
 	-- UI
 	require("lazy/plugins/ui/catppuccin"), -- Theme
 	require("lazy/plugins/ui/smear-cursor"), -- Adds animation to cursor movement.
+	require("lazy/plugins/ui/neoscroll"), -- Smooth scrolling.
 	require("lazy/plugins/ui/treesitter-context"), -- Adds context lines (Sticky Scroll) at the top when browsing nested content.
 	require("lazy/plugins/ui/todo-comments"), -- Highlighting todo, notes, etc in comments
 	-- require("lazy/plugins/ui/notify"), -- Adds nicer notification boxes.
