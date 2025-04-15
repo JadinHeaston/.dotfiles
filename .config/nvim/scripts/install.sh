@@ -7,6 +7,8 @@ sudo apt get update
 sudo apt install neovim -y
 
 ## Dependencies
+#### Telescope
+sudo apt install ripgrep -y
 #### Treesitter
 sudo apt install clang -y
 #### Mason
