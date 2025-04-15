@@ -18,7 +18,7 @@ return {
 				function()
 					require("gitblame").toggle()
 				end,
-				desc = "[T]oggle [g]it [b]lame",
+				desc = "[T]oggle [g]it inline [b]lame",
 			},
 		},
 	},
