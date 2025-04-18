@@ -1,2 +1,14 @@
+# Config file locations:
+#   Windows: %APPDATA%\alacritty\alacritty.toml
+#   Linux: ~/.config/alacritty/alacritty.toml
+
+# WINDOWS
+# [terminal]
+#   shell.program = "wsl"
+#   shell.args = ["~"]
+
+# LINUX
+
+# GENERAL
 [font]
 	normal = {family = "SauceCodePro Nerd Font Mono", style = "Regular"}
