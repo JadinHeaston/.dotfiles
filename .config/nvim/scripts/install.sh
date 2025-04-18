@@ -3,7 +3,7 @@
 # Installing Neovim
 # Unstable version recommended for better plugin support.
 sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt get update
+sudo apt update
 sudo apt install neovim -y
 
 ## Dependencies
