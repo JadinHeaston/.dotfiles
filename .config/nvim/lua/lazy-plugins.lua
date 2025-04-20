@@ -27,6 +27,7 @@ require("lazy").setup({
 	require("lazy/plugins/language/cmp"), -- Autocompletion
 	require("lazy/plugins/language/treesitter"), -- Highlight, edit, and navigate code
 	require("lazy/plugins/language/live-server"), -- Live server (HTML)
+	require("lazy/plugins/language/comment"), -- Comment/Uncomment hotkeys.
 
 	-- UI
 	require("lazy/plugins/ui/catppuccin"), -- Theme
