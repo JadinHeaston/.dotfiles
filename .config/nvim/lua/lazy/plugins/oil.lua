@@ -43,14 +43,17 @@ return {
 		})
 
 		-- Open parent directory in current window
-		vim.keymap.set("n", "-", "<CMD>Oil --preview<CR>", { desc = "Open parent directory" })
+		vim.keymap.set("n", "-", function()
+			require("oil").open(nil, nil, function()
+				require("oil").open_preview()
+			end)
+		end, { desc = "Open parent directory" })
 
 		-- Open parent directory in floating window
-		vim.keymap.set(
-			"n",
-			"<space>-",
-			require("oil").toggle_float,
-			{ desc = "Open parent directory (Oil - Floating)" }
-		)
+		vim.keymap.set("n", "<space>-", function()
+			require("oil").open_float(nil, nil, function()
+				require("oil").open_preview()
+			end)
+		end, { desc = "Open parent directory (Oil - Floating)" })
 	end,
 }
