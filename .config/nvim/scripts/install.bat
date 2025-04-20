@@ -10,6 +10,10 @@ winget install -e -i --id LLVM.LLVM
 REM LazyGit, so it works with the integration.
 winget install -e --id=JesseDuffield.lazygit
 
+REM LSP dependency
+winget install -e --id OpenJS.NodeJS
+
+
 REM Telescope dependency
 winget install -e --id BurntSushi.ripgrep.GNU
 

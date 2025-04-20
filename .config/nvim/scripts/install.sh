@@ -7,6 +7,8 @@ sudo apt update
 sudo apt install neovim -y
 
 ## Dependencies
+#### LSP
+sudo apt install nodejs npm -y
 #### Telescope
 sudo apt install ripgrep -y
 #### Treesitter
