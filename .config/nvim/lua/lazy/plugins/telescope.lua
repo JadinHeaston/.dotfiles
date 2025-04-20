@@ -25,7 +25,7 @@ return {
 			-- Useful for getting pretty icons, but requires a Nerd Font.
 			{
 				"nvim-tree/nvim-web-devicons",
-				enabled = vim.g.have_nerd_font
+				enabled = vim.g.have_nerd_font,
 			},
 		},
 		config = function()
@@ -55,6 +55,16 @@ return {
 				--     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
 				--   },
 				-- },
+				defaults = {
+					mappings = {
+						i = {
+							["<C-p>"] = require("telescope.actions.layout").toggle_preview,
+						},
+					},
+					preview = {
+						hide_on_startup = true, -- hide previewer when picker starts
+					},
+				},
 				pickers = {
 					find_files = {
 						hidden = true,
@@ -70,7 +80,7 @@ return {
 							"--glob=!**/yarn.lock",
 							"--glob=!**/package-lock.json",
 						},
-					}
+					},
 				},
 				extensions = {
 					["ui-select"] = {
@@ -111,6 +121,7 @@ return {
 				builtin.live_grep({
 					grep_open_files = true,
 					prompt_title = "Live Grep in Open Files",
+					previewer = true,
 				})
 			end, { desc = "[S]earch [/] in Open Files" })
 
