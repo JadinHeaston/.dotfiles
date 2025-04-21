@@ -1,5 +1,4 @@
--- [[ Basic Keymaps ]]
---  See `:help vim.keymap.set()`
+-- [[ Basic Keymaps ]] See `:help vim.keymap.set()`
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
@@ -117,6 +116,14 @@ end, { desc = "[S]earch [/] in Open Files" })
 -- Shortcut for searching your Neovim configuration files
 vim.keymap.set("n", "<leader>sn", function()
 	require("telescope.builtin").find_files({ cwd = vim.fn.stdpath("config") })
-end)
+end, { desc = "[S]earch [N]eovim config" })
+
+-- Opens Neoclip
+vim.keymap.set(
+	"n",
+	"<leader>sc",
+	"<cmd>lua require('telescope').extensions.neoclip.default()<CR>",
+	{ noremap = true, silent = true, desc = "[S]earch [C]lipboard history" }
+)
 
 -- vim: ts=2 sts=2 sw=2 et
