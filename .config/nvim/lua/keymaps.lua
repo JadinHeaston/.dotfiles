@@ -58,4 +58,9 @@ vim.api.nvim_create_autocmd("FileType", {
 	group = user_grp,
 })
 
+-- Adding toggle to treesitter context lines.
+vim.keymap.set("n", "<leader>tc", function()
+	require("treesitter-context").toggle()
+end, { desc = "[T]oggle [C]ontext lines" })
 -- vim: ts=2 sts=2 sw=2 et
+
