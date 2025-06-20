@@ -45,7 +45,7 @@ require("lazy").setup({
 	-- Language Specific
 	---- Markdown
 	require("lazy/plugins/language/markdown/markdown-preview"), -- Adding markdown preview. Requires NPM, unknown if this can be changed.
-
+	require("lazy/plugins/language/markdown/table-nvim"), -- Adds formatting to Markdown tables.
 	-- Misc
 	require("lazy/plugins/auto-pairs"), -- Autocomplete for symbols
 
