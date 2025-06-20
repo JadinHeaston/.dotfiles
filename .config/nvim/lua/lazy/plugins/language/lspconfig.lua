@@ -231,7 +231,7 @@ return {
 				"ts_ls", -- Typescript/JS
 				"markdownlint", -- Markdown
 				-- 'phpactor', -- PHP Intelehsense (Linux)
-				-- 'Intelephense', -- PHP (Windows)
+				'intelephense', -- PHP (Windows)
 				"sqlls", -- SQL
 			})
 			require("mason-tool-installer").setup({ ensure_installed = ensure_installed })

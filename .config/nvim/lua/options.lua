@@ -23,6 +23,9 @@ vim.schedule(function()
 	vim.opt.clipboard = "unnamedplus"
 end)
 
+-- Fixing colors on Windows with Alacritty. (This may not be needed?)
+vim.o.termguicolors = true
+
 -- Enable break indent
 vim.opt.breakindent = true
 
