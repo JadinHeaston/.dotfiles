@@ -30,7 +30,7 @@
 [status]
 	branch = true
 	showStash = true
-	showUntrackedFiles = no
+	showUntrackedFiles = all
 
 [diff]
 	rename = copies
