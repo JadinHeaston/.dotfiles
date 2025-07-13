@@ -77,6 +77,7 @@ return {
 							"--glob=!**/.vscode/*",
 							"--glob=!**/build/*",
 							"--glob=!**/dist/*",
+							"--glob=!**/node_modules/*",
 							"--glob=!**/yarn.lock",
 							"--glob=!**/package-lock.json",
 						},
