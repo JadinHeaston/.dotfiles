@@ -126,4 +126,20 @@ vim.keymap.set(
 	{ noremap = true, silent = true, desc = "[S]earch [C]lipboard history" }
 )
 
+-- Toggle spell check
+vim.keymap.set("n", "<leader>tsc", function()
+	vim.wo.spell = not vim.wo.spell
+	vim.cmd("redraw")
+	print("Spell Check: " .. tostring(vim.wo.spell))
+end, { desc = "[T]oggle [S]pell [C]heck" })
+
+vim.keymap.set("n", "<leader>tww", function()
+	vim.wo.wrap = not vim.wo.wrap
+	if vim.wo.wrap then
+		vim.notify("Word Wrap: ON", vim.log.levels.INFO)
+	else
+		vim.notify("Word Wrap: OFF", vim.log.levels.INFO)
+	end
+end, { desc = "[T]oggle [W]ord [W]rap" })
+
 -- vim: ts=2 sts=2 sw=2 et

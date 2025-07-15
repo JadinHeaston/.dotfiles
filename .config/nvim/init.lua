@@ -29,6 +29,9 @@ vim.g.maplocalleader = " "
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+-- Disable word wrap globally
+vim.opt.wrap = false
+
 --	Loading in OS specific configuration changes. Mostly just fixing Windows support... :|
 if vim.fn.has("win32") == 1 then
 	require("os/win")
