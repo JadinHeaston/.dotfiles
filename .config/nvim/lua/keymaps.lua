@@ -135,11 +135,7 @@ end, { desc = "[T]oggle [S]pell [C]heck" })
 
 vim.keymap.set("n", "<leader>tww", function()
 	vim.wo.wrap = not vim.wo.wrap
-	if vim.wo.wrap then
-		vim.notify("Word Wrap: ON", vim.log.levels.INFO)
-	else
-		vim.notify("Word Wrap: OFF", vim.log.levels.INFO)
-	end
+	vim.notify("Word Wrap: " .. tostring(vim.wo.wrap), vim.log.levels.INFO)
 end, { desc = "[T]oggle [W]ord [W]rap" })
 
 -- vim: ts=2 sts=2 sw=2 et
