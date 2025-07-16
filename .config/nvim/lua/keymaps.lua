@@ -97,10 +97,10 @@ end, { desc = "[ ] Find existing buffers" })
 -- Slightly advanced example of overriding default behavior and theme
 vim.keymap.set("n", "<leader>/", function()
 	-- You can pass additional configuration to Telescope to change the theme, layout, etc.
-	require("telescope.builtin").current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
-		winblend = 10,
+	require("telescope.builtin").current_buffer_fuzzy_find({
+		prompt_title = "Live Grep in Current Buffer",
 		previewer = true,
-	}))
+	})
 end, { desc = "[/] Fuzzily search in current buffer" })
 
 -- It's also possible to pass additional configuration options.
