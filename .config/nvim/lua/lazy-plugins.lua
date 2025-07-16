@@ -22,7 +22,7 @@ require("lazy").setup({
 
 	-- LSP Plugins
 	require("lazy/plugins/language/lazydev"), -- Lua LSP for Neovim config, runtime and plugins
-	require("lazy/plugins/language/lspconfig"), -- Main LSP Configuration
+	require("lazy/plugins/language/lspconfig"), -- Main LSP Configuration (Mason)
 	require("lazy/plugins/language/conform"), -- Autoformat
 	require("lazy/plugins/language/cmp"), -- Autocompletion
 	require("lazy/plugins/language/treesitter"), -- Highlight, edit, and navigate code
