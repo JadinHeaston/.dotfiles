@@ -97,10 +97,10 @@ end, { desc = "[ ] Find existing buffers" })
 -- Slightly advanced example of overriding default behavior and theme
 vim.keymap.set("n", "<leader>/", function()
 	-- You can pass additional configuration to Telescope to change the theme, layout, etc.
-	require("telescope.builtin").current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({
-		winblend = 10,
+	require("telescope.builtin").current_buffer_fuzzy_find({
+		prompt_title = "Live Grep in Current Buffer",
 		previewer = true,
-	}))
+	})
 end, { desc = "[/] Fuzzily search in current buffer" })
 
 -- It's also possible to pass additional configuration options.
@@ -125,5 +125,24 @@ vim.keymap.set(
 	"<cmd>lua require('telescope').extensions.neoclip.default()<CR>",
 	{ noremap = true, silent = true, desc = "[S]earch [C]lipboard history" }
 )
+
+-- Toggle Spell Check
+vim.keymap.set("n", "<leader>tsc", function()
+	vim.wo.spell = not vim.wo.spell
+	vim.cmd("redraw")
+	print("Spell Check: " .. tostring(vim.wo.spell))
+end, { desc = "[T]oggle [S]pell [C]heck" })
+
+-- Toggle Word Wrap
+vim.keymap.set("n", "<leader>tww", function()
+	vim.wo.wrap = not vim.wo.wrap
+	vim.notify("Word Wrap: " .. tostring(vim.wo.wrap), vim.log.levels.INFO)
+end, { desc = "[T]oggle [W]ord [W]rap" })
+
+-- Toggle Relative Line Number
+vim.keymap.set("n", "<leader>trl", function()
+	vim.wo.relativenumber = not vim.wo.relativenumber
+	vim.notify("Toggle Relative Line Number: " .. tostring(vim.wo.relativenumber), vim.log.levels.INFO)
+end, { desc = "[T]oggle [R]elative [L]ine Number" })
 
 -- vim: ts=2 sts=2 sw=2 et

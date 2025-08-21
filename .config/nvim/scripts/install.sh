@@ -27,3 +27,6 @@ rm lazygit lazygit.tar.gz
 
 ## Installing SSHFS for remote development.
 # sudo apt install sshfs
+#
+## Fixing copying/pasting between Windows and WSL.
+sudo apt install xsel -y

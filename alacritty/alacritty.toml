@@ -10,5 +10,8 @@
 # LINUX
 
 # GENERAL
+[env]
+  TERM = "xterm-256color"
+
 [font]
 	normal = {family = "SauceCodePro Nerd Font Mono", style = "Regular"}

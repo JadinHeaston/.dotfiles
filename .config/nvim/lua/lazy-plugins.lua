@@ -22,7 +22,7 @@ require("lazy").setup({
 
 	-- LSP Plugins
 	require("lazy/plugins/language/lazydev"), -- Lua LSP for Neovim config, runtime and plugins
-	require("lazy/plugins/language/lspconfig"), -- Main LSP Configuration
+	require("lazy/plugins/language/lspconfig"), -- Main LSP Configuration (Mason)
 	require("lazy/plugins/language/conform"), -- Autoformat
 	require("lazy/plugins/language/cmp"), -- Autocompletion
 	require("lazy/plugins/language/treesitter"), -- Highlight, edit, and navigate code
@@ -45,7 +45,7 @@ require("lazy").setup({
 	-- Language Specific
 	---- Markdown
 	require("lazy/plugins/language/markdown/markdown-preview"), -- Adding markdown preview. Requires NPM, unknown if this can be changed.
-
+	require("lazy/plugins/language/markdown/table-nvim"), -- Adds formatting to Markdown tables.
 	-- Misc
 	require("lazy/plugins/auto-pairs"), -- Autocomplete for symbols
 

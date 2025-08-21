@@ -64,6 +64,14 @@ return {
 					preview = {
 						hide_on_startup = true, -- hide previewer when picker starts
 					},
+					defaults = {
+						layout_strategy = "flex",
+						layout_config = {
+							flex = {
+								width = 0.9,
+							},
+						},
+					},
 				},
 				pickers = {
 					find_files = {
@@ -72,14 +80,30 @@ return {
 							"rg",
 							"--files",
 							"--hidden",
-							"--glob=!**/.git/*",
-							"--glob=!**/.idea/*",
-							"--glob=!**/.vscode/*",
-							"--glob=!**/build/*",
-							"--glob=!**/dist/*",
+							"--glob=!**/.git/**",
+							"--glob=!**/.idea/**",
+							"--glob=!**/.vscode/**",
+							"--glob=!**/build/**",
+							"--glob=!**/dist/**",
+							"--glob=!**/node_modules/**",
 							"--glob=!**/yarn.lock",
 							"--glob=!**/package-lock.json",
 						},
+					},
+					live_grep = {
+						additional_args = function()
+							return {
+								"--hidden",
+								"--glob=!**/.git/**",
+								"--glob=!**/.idea/**",
+								"--glob=!**/.vscode/**",
+								"--glob=!**/build/**",
+								"--glob=!**/dist/**",
+								"--glob=!**/node_modules/**",
+								"--glob=!**/yarn.lock",
+								"--glob=!**/package-lock.json",
+							}
+						end,
 					},
 				},
 				extensions = {
