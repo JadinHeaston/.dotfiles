@@ -7,6 +7,8 @@ sudo apt update
 sudo apt install neovim -y
 
 ## Dependencies
+#### Git
+sudo apt install git-all -y
 #### LSP
 sudo apt install nodejs npm -y
 #### Telescope

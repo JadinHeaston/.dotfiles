@@ -4,6 +4,9 @@ winget install -e --id Alacritty.Alacritty
 REM NeoVIM
 winget install -e --id=Neovim.Neovim
 
+REM Installing Git.
+winget install -e --id Git.Git
+
 REM Installing tools for plugin installs. - It's important to register to PATH during the GUI install.
 winget install -e -i --id LLVM.LLVM
 
