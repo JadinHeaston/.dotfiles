@@ -21,3 +21,5 @@ REM Telescope dependency
 winget install -e --id BurntSushi.ripgrep.GNU
 
 REM winget install SSHFS-Win.SSHFS-Win
+
+.\refresh.bat
