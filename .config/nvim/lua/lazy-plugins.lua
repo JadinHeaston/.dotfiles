@@ -43,6 +43,8 @@ require("lazy").setup({
 	require("lazy/plugins/ui/git-blame"), -- Adding inline Git blames.
 
 	-- Language Specific
+	---- d2
+	require("lazy/plugins/language/d2/d2"),
 	---- Markdown
 	require("lazy/plugins/language/markdown/markdown-preview"), -- Adding markdown preview. Requires NPM, unknown if this can be changed.
 	require("lazy/plugins/language/markdown/table-nvim"), -- Adds formatting to Markdown tables.
