@@ -187,11 +187,15 @@ return {
 						javascript = {
 							format = {
 								insertSpaceAfterFunctionKeywordForAnonymousFunctions = true,
+								placeOpenBraceOnNewLineForFunctions = true,
+								placeOpenBraceOnNewLineForControlBlocks = true,
 							},
 						},
 						typescript = {
 							format = {
 								insertSpaceAfterFunctionKeywordForAnonymousFunctions = true,
+								placeOpenBraceOnNewLineForFunctions = true,
+								placeOpenBraceOnNewLineForControlBlocks = true,
 							},
 						},
 					},
