@@ -1,5 +1,7 @@
 return {
 	"echasnovski/mini.nvim",
+	event = "VimEnter",
+	lazy = false,
 	config = function()
 		-- Better Around/Inside textobjects
 		--
