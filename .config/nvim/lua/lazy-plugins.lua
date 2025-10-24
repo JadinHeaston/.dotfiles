@@ -50,6 +50,8 @@ require("lazy").setup({
 	---- Markdown
 	require("lazy/plugins/language/markdown/markdown-preview"), -- Adding markdown preview. Requires NPM, unknown if this can be changed.
 	require("lazy/plugins/language/markdown/table-nvim"), -- Adds formatting to Markdown tables.
+	---- Powershell
+	require("lazy/plugins/language/powershell/powershell"),
 	-- Misc
 	require("lazy/plugins/auto-pairs"), -- Autocomplete for symbols
 
