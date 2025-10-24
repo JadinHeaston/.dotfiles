@@ -56,4 +56,5 @@ return {
 			end)
 		end, { desc = "Open parent directory (Oil - Floating)" })
 	end,
+	lazy = false,
 }

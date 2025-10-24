@@ -15,4 +15,5 @@ return { -- Indent Rainbow
 	dependencies = {
 		"TheGLander/indent-rainbowline.nvim",
 	},
+	event = "VeryLazy",
 }

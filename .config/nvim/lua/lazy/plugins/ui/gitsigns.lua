@@ -54,4 +54,5 @@ return {
 			map("n", "<leader>tghp", gitsigns.preview_hunk_inline, { desc = "[T]oggle [g]it [h]unk [p]review" })
 		end,
 	},
+	event = "VeryLazy",
 }

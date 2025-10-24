@@ -12,4 +12,5 @@ return {
 		-- Optional: integrate with hlslens
 		require("scrollbar.handlers.search").setup()
 	end,
+	event = { "BufEnter", "WinScrolled", "WinResized" },
 }
