@@ -1,5 +1,7 @@
 return {
 	"stevearc/oil.nvim",
+	event = "VimEnter",
+	lazy = false,
 	dependencies = { "nvim-tree/nvim-web-devicons" },
 	config = function()
 		CustomOilBar = function()
@@ -56,5 +58,4 @@ return {
 			end)
 		end, { desc = "Open parent directory (Oil - Floating)" })
 	end,
-	lazy = false,
 }

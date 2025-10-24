@@ -1,5 +1,7 @@
 return {
 	"2kabhishek/markit.nvim",
+	event = { "BufReadPre", "BufNewFile" },
+	lazy = true,
 	dependencies = {
 		{
 			"2KAbhishek/pickme.nvim",
@@ -20,5 +22,4 @@ return {
 	opts = {
 		enable_bookmarks = false,
 	}, -- Add your configuration here, required if you are not calling markit.setup manually elsewhere
-	event = { "BufReadPre", "BufNewFile" },
 }

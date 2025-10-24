@@ -1,5 +1,6 @@
 return { -- Adds context lines (Sticky Scroll) at the top when browsing nested content.
 	"nvim-treesitter/nvim-treesitter-context",
+	event = "VeryLazy",
 	dependencies = { "nvim-treesitter/nvim-treesitter" },
 	config = function()
 		require("treesitter-context").setup({
@@ -25,5 +26,4 @@ return { -- Adds context lines (Sticky Scroll) at the top when browsing nested c
 			require("treesitter-context").go_to_context(vim.v.count1)
 		end, { silent = true, desc = "Jump to [C]ontext" })
 	end,
-	event = "VeryLazy",
 }

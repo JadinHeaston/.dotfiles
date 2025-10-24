@@ -8,4 +8,5 @@ return {
 		end,
 		ft = { "markdown" },
 	},
+	lazy = true,
 }

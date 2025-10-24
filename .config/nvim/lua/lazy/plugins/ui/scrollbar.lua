@@ -1,5 +1,6 @@
 return {
 	"petertriho/nvim-scrollbar",
+	event = { "BufEnter", "WinScrolled", "WinResized" },
 	dependencies = {
 		"lewis6991/gitsigns.nvim",
 		"kevinhwang91/nvim-hlslens",
@@ -12,5 +13,4 @@ return {
 		-- Optional: integrate with hlslens
 		require("scrollbar.handlers.search").setup()
 	end,
-	event = { "BufEnter", "WinScrolled", "WinResized" },
 }

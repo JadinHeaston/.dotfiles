@@ -1,5 +1,6 @@
 return { -- Indent Rainbow
 	"lukas-reineke/indent-blankline.nvim",
+	event = "VeryLazy",
 	main = "ibl",
 	opts = function(_, opts)
 		return require("indent-rainbowline").make_opts({
@@ -15,5 +16,4 @@ return { -- Indent Rainbow
 	dependencies = {
 		"TheGLander/indent-rainbowline.nvim",
 	},
-	event = "VeryLazy",
 }

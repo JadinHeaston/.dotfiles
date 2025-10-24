@@ -1,5 +1,6 @@
 return {
 	"barrett-ruth/live-server.nvim",
+	lazy = true,
 	build = "npm install -g live-server",
 	cmd = { "LiveServerStart", "LiveServerStop" },
 	config = true,
