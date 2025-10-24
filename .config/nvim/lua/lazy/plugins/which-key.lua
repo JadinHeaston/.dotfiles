@@ -1,6 +1,6 @@
 return {
 	"folke/which-key.nvim",
-	lazy = true,
+	event = "VimEnter",
 	opts = {
 		-- delay between pressing a key and opening which-key (milliseconds)
 		-- this setting is independent of vim.opt.timeoutlen
