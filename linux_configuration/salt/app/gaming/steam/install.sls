@@ -1,0 +1,15 @@
+{{ sls }}_repo:
+  pkgrepo.managed:
+    - name: 'deb [arch=amd64,i386] https://repo.steampowered.com/steam/ stable steam'
+    - file: /etc/apt/sources.list.d/steam.list
+    - key_url: https://repo.steampowered.com/steam/archive/stable/steam.gpg
+    - clean_file: true
+    - require_in:
+      - pkg: {{ sls }}
+
+{{ sls }}:
+  pkg.installed:
+    - name: steam-launcher
+    - refresh: true
+    - require:
+      - pkgrepo: {{ sls }}_repo
