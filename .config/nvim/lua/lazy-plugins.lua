@@ -48,6 +48,8 @@ require("lazy").setup({
 	require("lazy/plugins/language/d2/d2"),
 	---- HTML
 	require("lazy/plugins/language/html/live-server"),
+	---- CSV
+	require("lazy/plugins/language/csv/csvview"), -- Adding CSV navigation and visual formatting.
 	---- Markdown
 	require("lazy/plugins/language/markdown/markdown-preview"), -- Adding markdown preview. Requires NPM, unknown if this can be changed.
 	require("lazy/plugins/language/markdown/table-nvim"), -- Adds formatting to Markdown tables.
