@@ -151,4 +151,27 @@ vim.keymap.set("n", "<leader>trl", function()
 	vim.notify("Toggle Relative Line Number: " .. tostring(vim.wo.relativenumber), vim.log.levels.INFO)
 end, { desc = "[T]oggle [R]elative [L]ine Number" })
 
+vim.keymap.set("n", "@", function()
+	-- Store the current value of lazyredraw to restore later
+	local prev_lazyredraw = vim.o.lazyredraw
+
+	-- Get the count and the register name for the macro
+	local count = vim.v.count1
+	local register = vim.fn.getcharstr()
+
+	-- Temporarily enable lazyredraw for performance
+	vim.o.lazyredraw = true
+
+	-- Execute the macro without remapping (noautocmd normal!)
+	vim.api.nvim_command(string.format("noa norm! %d@%s", count, register))
+
+	-- Restore the previous value of lazyredraw
+	vim.o.lazyredraw = prev_lazyredraw
+
+	-- Force a screen update only if the buffer has a file name
+	if vim.fn.bufname("%") ~= "" then
+		vim.api.nvim_command("silent update")
+	end
+end, { noremap = true, desc = "Run macro with lazyredraw toggled" })
+
 -- vim: ts=2 sts=2 sw=2 et
