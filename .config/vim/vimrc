@@ -1,0 +1,31 @@
+" Default Leader: \
+
+" Visual
+"" Enable visible relative line numbers
+set number relativenumber
+
+"" Enable syntax highlighting
+syntax enable
+
+"" Set status line
+set statusline=%F%m%r%h\ %w\ \[FileType:%Y]\ \[Line:%l/%L,\ Col:%c]
+
+" Search
+"" Search case-insensitive unless an uppercase letter is present.
+set ignorecase
+set smartcase
+"" Highlight all matches for current search
+set hlsearch
+"" Show partial matches while searching
+set incsearch
+
+" Enable persistent undo on (means that you can undo even when you close a buffer/VIM)
+set undofile
+if !isdirectory(expand('$HOME/.config/vim/undo'))
+    call mkdir(expand('$HOME/.config/vim/undo'), 'p', 0700)
+endif
+set undodir=$HOME/.vim/undo
+
+" Keymaps
+"" Toggle Linenumber
+nnoremap <leader>n :set number! relativenumber!<CR>
