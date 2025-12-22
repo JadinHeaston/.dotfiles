@@ -1,23 +1,31 @@
 " Default Leader: \
 
-" Visual
-"" Enable visible relative line numbers
-set number relativenumber
-
-"" Enable syntax highlighting
-syntax enable
-
+" General
+"" Disable compatibility with vi which can cause unexpected issues.
+set nocompatible
+"" Showing relative line numbers with the absolute number on the current line.
+set number
+set relativenumber
 "" Set status line
 set statusline=%F%m%r%h\ %w\ \[FileType:%Y]\ \[Line:%l/%L,\ Col:%c]
-
-" Search
-"" Search case-insensitive unless an uppercase letter is present.
-set ignorecase
-set smartcase
-"" Highlight all matches for current search
-set hlsearch
-"" Show partial matches while searching
-set incsearch
+"" Do not let cursor scroll below or above N number of lines.
+set scrolloff=10
+"" Set the commands to save in history default number is 20.
+set history=1000
+"" Enable auto completion menu after pressing TAB.
+set wildmenu
+"" Make wildmenu behave like similar to Bash completion.
+set wildmode=list:longest
+"" There are certain files that we would never want to edit with Vim. Wildmenu will ignore files with these extensions.
+set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+"" Enable type file detection.
+filetype on
+"" Enable plugins and load plugin for the detected file type.
+filetype plugin on
+"" Load an indent file for the detected file type.
+filetype indent on
+"" Enable syntax highlighting
+syntax enable
 
 " Enable persistent undo on (means that you can undo even when you close a buffer/VIM)
 set undofile
@@ -25,6 +33,17 @@ if !isdirectory(expand('$HOME/.config/vim/undo'))
     call mkdir(expand('$HOME/.config/vim/undo'), 'p', 0700)
 endif
 set undodir=$HOME/.vim/undo
+
+" Search
+"" Show matching words during a search.
+set showmatch
+"" Search case-insensitive unless an uppercase letter is present.
+set ignorecase
+set smartcase
+"" Highlight all matches for current search
+set hlsearch
+"" Show partial matches while searching
+set incsearch
 
 " Keymaps
 "" Toggle Linenumber
