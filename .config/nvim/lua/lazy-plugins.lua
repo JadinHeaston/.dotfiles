@@ -15,7 +15,6 @@ require("lazy").setup({
 
 	require("lazy/plugins/which-key"), -- Useful plugin to show you pending keybinds.
 	require("lazy/plugins/telescope"), -- Fuzzy Finder (files, lsp, etc)
-	require("lazy/plugins/neoclip"), -- Clipboard manager
 	require("lazy/plugins/oil"), -- File explorer/editor
 	require("lazy/plugins/mini"), -- Collection of various small independent plugins/modules
 	require("lazy/plugins/auto-save"), -- Adds toggleable auto saving.
@@ -32,13 +31,11 @@ require("lazy").setup({
 	-- UI
 	require("lazy/plugins/ui/catppuccin"), -- Theme
 	require("lazy/plugins/ui/smear-cursor"), -- Adds animation to cursor movement.
-	require("lazy/plugins/ui/neoscroll"), -- Smooth scrolling.
 	require("lazy/plugins/ui/treesitter-context"), -- Adds context lines (Sticky Scroll) at the top when browsing nested content.
 	require("lazy/plugins/ui/todo-comments"), -- Highlighting todo, notes, etc in comments
 	require("lazy/plugins/ui/scrollbar"), -- Adds visible scrollbar with some integrations
 	require("lazy/plugins/ui/noice"), -- Adding better notifications and command line.
 	require("lazy/plugins/ui/indent-blankline"), -- Indent Rainbow
-	require("lazy/plugins/ui/rainbow-delimiters"), -- Rainbow Brackets
 	require("lazy/plugins/ui/gitsigns"), -- Adds git related signs to the gutter, as well as utilities for managing changes
 	require("lazy/plugins/ui/lazygit"), -- LazyGit integration
 	require("lazy/plugins/ui/git-blame"), -- Adding inline Git blames.
