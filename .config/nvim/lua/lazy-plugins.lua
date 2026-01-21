@@ -39,6 +39,7 @@ require("lazy").setup({
 	require("lazy/plugins/ui/gitsigns"), -- Adds git related signs to the gutter, as well as utilities for managing changes
 	require("lazy/plugins/ui/lazygit"), -- LazyGit integration
 	require("lazy/plugins/ui/git-blame"), -- Adding inline Git blames.
+	require("lazy/plugins/ui/visual-whitespace"), -- Makes whitespace visible in Visual Mode.
 
 	-- Language Specific
 	---- d2
