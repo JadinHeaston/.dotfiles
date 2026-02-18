@@ -30,6 +30,16 @@ return {
 		},
 		indent = { enable = true, disable = { "ruby" } },
 	},
+	config = function(_, opts)
+		require("nvim-treesitter.configs").setup(opts)
+
+		-- Use Treesitter for folding
+		vim.opt.foldmethod = "expr"
+		vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+
+		-- Prevent everything from being closed on open
+		vim.opt.foldlevel = 99
+	end,
 	-- There are additional nvim-treesitter modules that you can use to interact
 	-- with nvim-treesitter. You should go explore a few and see what interests you:
 	--    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
