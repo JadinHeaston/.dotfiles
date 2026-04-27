@@ -57,6 +57,9 @@ vim.api.nvim_create_autocmd("FileType", {
 	group = user_grp,
 })
 
+-- Toggle auto save
+vim.keymap.set("n", "<leader>tas", "<cmd>ASToggle<CR>", { desc = "[T]oggle [auto]-[s]ave" })
+
 -- Adding toggle to treesitter context lines.
 vim.keymap.set("n", "<leader>tc", function()
 	require("treesitter-context").toggle()
@@ -66,12 +69,6 @@ end, { desc = "[T]oggle [C]ontext lines" })
 vim.keymap.set("n", "<leader>sh", function()
 	require("telescope.builtin").help_tags()
 end, { desc = "[S]earch [H]elp" })
-vim.keymap.set("n", "<leader>s:", function()
-	require("telescope.builtin").commands()
-end, { desc = "[S]earch Commands" })
-vim.keymap.set("n", "<leader>s;", function()
-	require("telescope.builtin").command_history()
-end, { desc = "[S]earch Command History" })
 vim.keymap.set("n", "<leader>sk", function()
 	require("telescope.builtin").keymaps()
 end, { desc = "[S]earch [K]eymaps" })
