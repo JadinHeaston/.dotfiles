@@ -5,7 +5,34 @@ return {
 		-- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
 		"MunifTanjim/nui.nvim",
 		-- OPTIONAL: `nvim-notify` is only needed, if you want to use the notification view. `mini` is the fallback
-		"rcarriga/nvim-notify",
+		{
+			"rcarriga/nvim-notify",
+			lazy = true,
+			event = "VeryLazy",
+			opts = {
+				render = "default",
+				stage = "static",
+				max_width = function()
+					return math.floor(vim.o.columns * 0.25)
+				end,
+				minimum_width = 100,
+				background_color = "#000000",
+				fps = 5,
+			},
+			config = function(_, opts)
+				local notify = require("notify")
+				notify.setup(opts)
+
+				-- Recalculate max_width on resize
+				vim.api.nvim_create_autocmd("VimResized", {
+					callback = function()
+						notify.setup({
+							max_width = math.floor(vim.o.columns * 0.25),
+						})
+					end,
+				})
+			end,
+		},
 	},
 	opts = {
 		lsp = {
