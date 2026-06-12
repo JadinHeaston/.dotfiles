@@ -58,7 +58,14 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 
 -- Toggle auto save
-vim.keymap.set("n", "<leader>tas", "<cmd>ASToggle<CR>", { desc = "[T]oggle [auto]-[s]ave" })
+local auto_save_enabled = false
+
+vim.keymap.set("n", "<leader>tas", function()
+	vim.cmd("ASToggle")
+	auto_save_enabled = not auto_save_enabled
+
+	vim.notify("Auto Save: " .. (auto_save_enabled and "On" or "Off"), vim.log.levels.INFO)
+end, { desc = "[T]oggle [A]uto [S]ave" })
 
 -- Adding toggle to treesitter context lines.
 vim.keymap.set("n", "<leader>tc", function()
