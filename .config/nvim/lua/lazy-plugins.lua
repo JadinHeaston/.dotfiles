@@ -50,6 +50,7 @@ require("lazy").setup({
 	require("lazy/plugins/language/csv/csvview"), -- Adding CSV navigation and visual formatting.
 	---- Markdown
 	require("lazy/plugins/language/markdown/markdown-preview"), -- Adding markdown preview. Requires NPM, unknown if this can be changed.
+	require("lazy/plugins/language/markdown/markdown-toc"), -- Adds Markdown Table of Content generation.
 	require("lazy/plugins/language/markdown/table-nvim"), -- Adds formatting to Markdown tables.
 	---- Powershell
 	require("lazy/plugins/language/powershell/powershell"),
